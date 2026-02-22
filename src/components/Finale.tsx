@@ -35,13 +35,10 @@ const Finale = () => {
   ];
 
   const marqueeTags = [
-    "DURGA VARA PRASAD",
-    "FULL STACK DEVELOPER",
-    "FLUTTER EXPERT",
-    "REACT ENTHUSIAST",
-    "BLOCKCHAIN DEVELOPER",
-    "AI INTEGRATION",
-    "UI/UX DESIGNER",
+    "Durga Vara Prasad 🚀",
+    "Full Stack Dev | Flutter | React | Blockchain | AI",
+    "Designing clean UI/UX + Smart solutions🔖",
+    "Exploring tech through Vibe Coding",
   ];
 
   return (
