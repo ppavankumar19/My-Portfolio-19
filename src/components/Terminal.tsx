@@ -5,6 +5,14 @@ import {
   Maximize2,
   Minimize2,
 } from "lucide-react";
+import {
+  playTerminalOpen,
+  playTerminalClose,
+  playKeyTick,
+  playSuccess,
+  playError,
+  playClick,
+} from "@/hooks/useSoundEffects";
 
 interface CommandOutput {
   id: number;
@@ -52,9 +60,14 @@ const Terminal = () => {
     const handleKeyDown = (e: KeyboardEvent) => {
       if ((e.metaKey || e.ctrlKey) && e.key === "k") {
         e.preventDefault();
-        setIsOpen((prev) => !prev);
+        setIsOpen((prev) => {
+          const next = !prev;
+          if (next) playTerminalOpen(); else playTerminalClose();
+          return next;
+        });
       }
       if (e.key === "Escape" && isOpen) {
+        playTerminalClose();
         setIsOpen(false);
       }
     };
@@ -197,10 +210,12 @@ const Terminal = () => {
 
     // Check for clear/exit first
     if (trimmedCmd.toLowerCase() === "clear") {
+      playClick();
       setHistory([]);
       return;
     }
     if (trimmedCmd.toLowerCase() === "exit") {
+      playTerminalClose();
       setIsOpen(false);
       return;
     }
@@ -215,12 +230,15 @@ const Terminal = () => {
 
     // Default fallback
     if (!response) {
+      playError();
       response = (
         <span className="text-red-400">
           Command not understood. Try asking "who are you?", "show skills", or
           type 'help'.
         </span>
       );
+    } else {
+      playSuccess();
     }
 
     newHistory.push({
@@ -246,7 +264,7 @@ const Terminal = () => {
           Ctrl + K
         </div>
         <button
-          onClick={() => setIsOpen(true)}
+          onClick={() => { playTerminalOpen(); setIsOpen(true); }}
           className="p-3 bg-white border border-black shadow-[4px_4px_0px_0px_rgba(0,0,0,1)] hover:bg-black hover:text-white transition-all duration-300"
           aria-label="Open Terminal"
         >
@@ -272,7 +290,7 @@ const Terminal = () => {
           <div className="flex items-center gap-2">
             <div
               className="w-3 h-3 rounded-full bg-red-500 hover:bg-red-600 cursor-pointer"
-              onClick={() => setIsOpen(false)}
+              onClick={() => { playTerminalClose(); setIsOpen(false); }}
             />
             <div
               className="w-3 h-3 rounded-full bg-yellow-500 hover:bg-yellow-600 cursor-pointer"
@@ -291,7 +309,7 @@ const Terminal = () => {
               {isMaximized ? <Minimize2 size={14} /> : <Maximize2 size={14} />}
             </button>
             <button
-              onClick={() => setIsOpen(false)}
+              onClick={() => { playTerminalClose(); setIsOpen(false); }}
               className="hover:text-white"
             >
               <X size={14} />
@@ -317,7 +335,7 @@ const Terminal = () => {
               ref={inputRef}
               type="text"
               value={input}
-              onChange={(e) => setInput(e.target.value)}
+              onChange={(e) => { setInput(e.target.value); playKeyTick(); }}
               className="flex-1 bg-transparent border-none outline-none text-white focus:ring-0 p-0"
               autoFocus
               spellCheck={false}

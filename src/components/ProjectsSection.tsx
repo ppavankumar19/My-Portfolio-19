@@ -2,6 +2,7 @@ import { Github, ExternalLink } from "lucide-react";
 import SectionBlock from "./SectionBlock";
 import { Button } from "./ui/button";
 import { Badge } from "./ui/badge";
+import { playHover, playClick } from "@/hooks/useSoundEffects";
 
 const projects = [
   {
@@ -76,6 +77,7 @@ const ProjectsSection = () => (
       {projects.map((project) => (
         <div
           key={project.title}
+          onMouseEnter={playHover}
           className="group relative border-2 border-black p-5 flex flex-col justify-between hover:shadow-[8px_8px_0px_0px_rgba(0,0,0,1)] hover:-translate-x-1 hover:-translate-y-1 transition-all duration-300 bg-white"
         >
           {"isNew" in project && project.isNew && (
@@ -108,6 +110,7 @@ const ProjectsSection = () => (
               href={project.githubUrl}
               target="_blank"
               rel="noopener noreferrer"
+              onClick={playClick}
               className="flex items-center justify-center gap-2 px-4 py-2 border-2 border-black bg-white text-[10px] font-black uppercase tracking-wider transition-all duration-300 shadow-[4px_4px_0px_0px_rgba(0,0,0,1)] hover:shadow-none hover:translate-x-[2px] hover:translate-y-[2px] hover:bg-black hover:text-white"
             >
               <Github className="w-3.5 h-3.5" />
@@ -117,6 +120,7 @@ const ProjectsSection = () => (
               href={project.liveUrl}
               target="_blank"
               rel="noopener noreferrer"
+              onClick={playClick}
               className="flex items-center justify-center gap-2 px-4 py-2 border-2 border-black bg-white text-[10px] font-black uppercase tracking-wider transition-all duration-300 shadow-[4px_4px_0px_0px_rgba(0,0,0,1)] hover:shadow-none hover:translate-x-[2px] hover:translate-y-[2px] hover:bg-black hover:text-white"
             >
               <ExternalLink className="w-3.5 h-3.5" />

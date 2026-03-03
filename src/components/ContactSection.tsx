@@ -1,4 +1,5 @@
 import { useState } from "react";
+import { playPop, playSuccess, playClick } from "@/hooks/useSoundEffects";
 import SectionBlock from "./SectionBlock";
 import {
   Mail,
@@ -19,6 +20,7 @@ const ContactSection = () => {
 
   const handleSubmit = (e: React.FormEvent) => {
     e.preventDefault();
+    playSuccess();
     const phoneNumber = "+919550533315";
     const text = `Name: ${form.name}\nEmail: ${form.email}\nMessage: ${form.message}`;
     const encodedText = encodeURIComponent(text);
@@ -27,6 +29,7 @@ const ContactSection = () => {
 
   const copyEmail = () => {
     navigator.clipboard.writeText("pappuridurgavaraprasad4pl@gmail.com");
+    playPop();
     setCopied(true);
     setTimeout(() => setCopied(false), 2000);
   };
@@ -100,6 +103,7 @@ const ContactSection = () => {
                   href={href}
                   target="_blank"
                   rel="noopener noreferrer"
+                  onClick={playClick}
                   className="p-3 border border-foreground/20 hover:bg-black hover:text-white transition-all duration-300 hover:-translate-y-1"
                 >
                   <Icon className="w-5 h-5" />
