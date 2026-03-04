@@ -1,6 +1,4 @@
-<div align="center">
 
-![Portfolio Banner](public/banner.png)
 
 # 🚀 Durga Vara Prasad's Portfolio
 
