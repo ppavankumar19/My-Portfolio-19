@@ -89,57 +89,6 @@ const SkillsSection = () => {
   return (
     <SectionBlock id="skills" title="Technical Arsenal">
       <div className="flex flex-col gap-16">
-        {/* Top Expertise / Highlights */}
-        <div className="grid grid-cols-1 md:grid-cols-2 gap-6">
-          <div className="p-8 border-4 border-black bg-white shadow-[8px_8px_0px_0px_rgba(0,0,0,1)] relative overflow-hidden group">
-            <div className="absolute top-0 right-0 p-4 opacity-10 group-hover:opacity-20 transition-opacity">
-              <Zap className="w-24 h-24" />
-            </div>
-            <h3 className="font-mono text-2xl font-bold mb-4 uppercase tracking-tighter flex items-center gap-2">
-              <span className="w-3 h-3 bg-yellow-400 border border-black" />
-              Core Competence
-            </h3>
-            <p className="font-mono text-sm text-gray-600 leading-relaxed mb-6">
-              Specialized in high-performance application development with a
-              focus on cross-platform excellence and modern UI/UX patterns.
-            </p>
-            <div className="flex flex-wrap gap-3">
-              {['Full-Stack', 'Cross-Platform', 'Web3 Arch'].map((tag) => (
-                <span
-                  key={tag}
-                  className="px-3 py-1 bg-black text-white text-[10px] font-bold uppercase tracking-widest"
-                >
-                  {tag}
-                </span>
-              ))}
-            </div>
-          </div>
-
-          <div className="p-8 border-4 border-black bg-white shadow-[8px_8px_0px_0px_rgba(0,0,0,1)] relative overflow-hidden group">
-            <div className="absolute top-0 right-0 p-4 opacity-10 group-hover:opacity-20 transition-opacity">
-              <Layers className="w-24 h-24" />
-            </div>
-            <h3 className="font-mono text-2xl font-bold mb-4 uppercase tracking-tighter flex items-center gap-2">
-              <span className="w-3 h-3 bg-black border border-black" />
-              Current Focus
-            </h3>
-            <p className="font-mono text-sm text-gray-600 leading-relaxed mb-6">
-              Deep diving into the Move ecosystem on Aptos and integrating
-              Generative AI into production-ready workflows.
-            </p>
-            <div className="flex flex-wrap gap-3">
-              {['Aptos/Move', 'Gen AI', 'Edge Computing'].map((tag) => (
-                <span
-                  key={tag}
-                  className="px-3 py-1 border-2 border-black text-[10px] font-bold uppercase tracking-widest"
-                >
-                  {tag}
-                </span>
-              ))}
-            </div>
-          </div>
-        </div>
-
         {/* Skill Modules */}
         <div className="grid grid-cols-1 md:grid-cols-2 lg:grid-cols-3 gap-6">
           {skillCategories.map((category, idx) => (
