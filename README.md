@@ -139,7 +139,7 @@ If you have any questions or want to collaborate, feel free to reach out!
 
 ---
 <div align="center">
-  <h2 style="font-size:32px; animation: glow 2s ease-in-out infinite alternate;">
+  <h2 style="font-size:28px; animation: glow 2s ease-in-out infinite alternate;">
     Built with 🤍🖤 and powered by coffee-driven development by Durga Vara Prasad.
   </h2>
 </div>
