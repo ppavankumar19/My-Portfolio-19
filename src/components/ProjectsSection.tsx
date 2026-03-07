@@ -6,8 +6,24 @@ import { playHover, playClick } from '@/hooks/useSoundEffects';
 
 const projects = [
   {
-    title: 'SafeTrip Pro',
+    title: 'AI Voice Editor',
     isNew: true,
+    description:
+      'A mystical, AI-driven document editor where your voice commands reshape text in real time. Upload a PDF, speak your intent, and watch the Gilded Voice Scribe bring your words to life.',
+    tags: [
+      'React',
+      'TypeScript',
+      'Tailwind',
+      'AI',
+      'Speech Recognition',
+      'Vite',
+      'Supabase',
+    ],
+    githubUrl: 'https://github.com/VARA4u-tech/AI-Voice-Editor',
+    liveUrl: 'https://ai-voice-editor-4rpa.vercel.app',
+  },
+  {
+    title: 'SafeTrip Pro',
     description:
       'A premium, AI-powered navigation and safety companion featuring real-time intelligence, drowsiness detection, SOS guardian network, and predictive analytics for a safer driving experience.',
     tags: [
