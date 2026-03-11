@@ -17,8 +17,8 @@ const Navbar = () => {
 
   return (
     <nav className="fixed top-0 left-0 right-0 z-50 py-6 bg-background/80 backdrop-blur-sm">
-      <div className="max-w-6xl mx-auto px-6 flex items-center justify-between md:justify-center relative">
-        {/* Desktop */}
+      <div className="max-w-6xl mx-auto px-6 flex flex-col md:flex-row items-center justify-between md:justify-center relative">
+        {/* Desktop Navbar (Hidden on Mobile) */}
         <div className="hidden md:flex items-center justify-center gap-0">
           {links.map((link, i) => (
             <span key={link.href} className="flex items-center">
@@ -49,9 +49,8 @@ const Navbar = () => {
           <SoundToggle />
         </div>
 
-        {/* Mobile toggle */}
+        {/* Mobile Header (Toggle Left, Sound Right) */}
         <div className="md:hidden flex justify-between w-full items-center">
-          <div className="w-10" /> {/* Spacer to center menu */}
           <button
             onClick={() => {
               playClick();
@@ -68,14 +67,14 @@ const Navbar = () => {
           </div>
         </div>
 
-        {/* Mobile menu */}
+        {/* Mobile menu (Centered Links) */}
         {open && (
-          <div className="md:hidden flex flex-col items-center gap-4 mt-6 animate-in fade-in slide-in-from-top-4 duration-300">
+          <div className="md:hidden flex flex-col items-center justify-center w-full gap-6 mt-12 animate-in fade-in slide-in-from-top-4 duration-300">
             {links.map((link) => (
               <a
                 key={link.href}
                 href={link.href}
-                className="nav-link text-base active:scale-95 transition-transform"
+                className="nav-link text-base tracking-[0.3em] active:scale-95 transition-transform"
                 onClick={() => {
                   playClick();
                   setOpen(false);
