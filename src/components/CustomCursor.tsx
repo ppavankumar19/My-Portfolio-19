@@ -63,7 +63,7 @@ const CustomCursor = () => {
     >
       {/* Outer Square */}
       <div
-        className={`absolute -translate-x-1/2 -translate-y-1/2 border-2 border-black bg-white transition-all duration-200 ease-out ${
+        className={`absolute -translate-x-1/2 -translate-y-1/2 border-2 border-black bg-white transition-all duration-200 ease-out rounded-lg ${
           isHovering ? 'w-10 h-10 rotate-45 bg-black' : 'w-6 h-6 rotate-0'
         } ${isClicking ? 'scale-75' : 'scale-100'}`}
         style={{
