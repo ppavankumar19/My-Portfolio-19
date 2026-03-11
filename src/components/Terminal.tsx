@@ -23,6 +23,7 @@ interface CommandOutput {
 const Terminal = () => {
   const [isOpen, setIsOpen] = useState(false);
   const [isMaximized, setIsMaximized] = useState(false);
+  const [terminalTheme, setTerminalTheme] = useState('text-white/90');
   const [input, setInput] = useState('');
   const [history, setHistory] = useState<CommandOutput[]>([
     {
@@ -83,7 +84,11 @@ const Terminal = () => {
     switch (cmd) {
       case 'help':
         return (
-          <div className="grid grid-cols-[100px_1fr] gap-2">
+          <div className="grid grid-cols-[100px_1fr] gap-x-4 gap-y-1">
+            <span className="text-green-400">ls</span>{' '}
+            <span>List available files</span>
+            <span className="text-green-400">cat [file]</span>{' '}
+            <span>Read a file</span>
             <span className="text-green-400">about</span>{' '}
             <span>Learn about me</span>
             <span className="text-green-400">skills</span>{' '}
@@ -92,18 +97,37 @@ const Terminal = () => {
             <span>List recent projects</span>
             <span className="text-green-400">contact</span>{' '}
             <span>How to reach me</span>
+            <span className="text-green-400">theme [t]</span>{' '}
+            <span>Change theme (green, amber, white)</span>
             <span className="text-green-400">clear</span>{' '}
             <span>Clear the terminal</span>
             <span className="text-green-400">exit</span>{' '}
             <span>Close terminal</span>
           </div>
         );
+      case 'ls':
+        return (
+          <div className="grid grid-cols-2 gap-2 text-blue-400">
+            <span>README.md</span>
+            <span>experience.txt</span>
+            <span>education.txt</span>
+            <span>roadmap.sh</span>
+          </div>
+        );
+      case 'cat readme.md':
+        return "Vara's Portfolio v1.0.0. Built with React, TypeScript, and a reckless amount of neobrutalism.";
+      case 'cat experience.txt':
+        return 'Freelance Developer @ AOTMS. Built scalable transport systems and loved every second of it.';
+      case 'cat education.txt':
+        return 'Currently exploring the depths of CSE, specializing in Blockchain and AI.';
+      case 'cat roadmap.sh':
+        return 'Next up: Master Aptos Move, scale AI Voice Editor, and keep vibe coding.';
       case 'about':
-        return "I'm Pappuri Durga Vara Prasad, a passionate developer specializing in Flutter, React, and Blockchain technologies. I build modern, high-performance applications.";
+        return "I'm Pappuri Durga Vara Prasad, a passionate developer specializing in Flutter, React, and Blockchain technologies. I building modern, high-performance applications.";
       case 'skills':
         return (
           <div>
-            <p className="mb-1">CORE STACK:</p>
+            <p className="mb-1 text-yellow-400">CORE STACK:</p>
             <p>• Flutter / Dart</p>
             <p>• React / TypeScript</p>
             <p>• Firebase / Node.js</p>
@@ -113,25 +137,27 @@ const Terminal = () => {
       case 'projects':
         return (
           <div className="flex flex-col gap-1">
+            <p className="mb-1 text-purple-400">RECENT WORK:</p>
             <a href="#projects" className="text-blue-400 hover:underline">
-              1. EduPredict (AI Analytics)
+              1. AI Voice Editor (LATEST)
             </a>
             <a href="#projects" className="text-blue-400 hover:underline">
-              2. AOTMS (Transport Mgmt)
+              2. SafeTrip Pro (Safety App)
             </a>
             <a href="#projects" className="text-blue-400 hover:underline">
-              3. Vara's Portfolio
+              3. AOTMS (Freelance)
             </a>
           </div>
         );
       case 'contact':
         return (
           <div>
+            <p className="text-red-400 mb-1">REACH OUT:</p>
             <p>
               Email:{' '}
               <a
                 href="mailto:pappuridurgavaraprasad4pl@gmail.com"
-                className="text-blue-400 hover:underline"
+                className="text-white hover:underline"
               >
                 pappuridurgavaraprasad4pl@gmail.com
               </a>
@@ -142,9 +168,9 @@ const Terminal = () => {
                 href="https://www.linkedin.com/in/durga-vara-prasad-pappuri-1797701b6/"
                 target="_blank"
                 rel="noopener noreferrer"
-                className="text-blue-400 hover:underline"
+                className="text-white hover:underline"
               >
-                www.linkedin.com/in/durga-vara-prasad-pappuri-1797701b6/
+                LinkedIn Profile
               </a>
             </p>
             <p>
@@ -153,7 +179,7 @@ const Terminal = () => {
                 href="https://github.com/VARA4u-tech"
                 target="_blank"
                 rel="noopener noreferrer"
-                className="text-blue-400 hover:underline"
+                className="text-white hover:underline"
               >
                 github.com/VARA4u-tech
               </a>
@@ -209,15 +235,34 @@ const Terminal = () => {
       },
     ];
 
-    // Check for clear/exit first
-    if (trimmedCmd.toLowerCase() === 'clear') {
+    const [cmdName, ...args] = trimmedCmd.toLowerCase().split(' ');
+
+    if (cmdName === 'clear') {
       playClick();
       setHistory([]);
       return;
     }
-    if (trimmedCmd.toLowerCase() === 'exit') {
+
+    if (cmdName === 'exit') {
       playTerminalClose();
       setIsOpen(false);
+      return;
+    }
+
+    if (cmdName === 'theme') {
+      const t = args[0];
+      if (t === 'green') {
+        setTerminalTheme('text-green-400');
+        playSuccess();
+      } else if (t === 'amber' || t === 'yellow') {
+        setTerminalTheme('text-amber-400');
+        playSuccess();
+      } else if (t === 'white') {
+        setTerminalTheme('text-white/90');
+        playSuccess();
+      } else {
+        playError();
+      }
       return;
     }
 
@@ -359,7 +404,7 @@ const Terminal = () => {
 
         {/* content */}
         <div
-          className="flex-1 overflow-y-auto p-4 text-white/90 selection:bg-white/20"
+          className={`flex-1 overflow-y-auto p-4 selection:bg-white/20 ${terminalTheme}`}
           ref={scrollRef}
           onClick={handleTerminalClick}
         >

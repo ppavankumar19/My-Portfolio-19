@@ -1,5 +1,6 @@
 import { useState } from 'react';
-import { playClick } from '@/hooks/useSoundEffects';
+import { playClick, playHover } from '@/hooks/useSoundEffects';
+import SoundToggle from './SoundToggle';
 
 const links = [
   { label: 'About', href: '#about' },
@@ -16,7 +17,7 @@ const Navbar = () => {
 
   return (
     <nav className="fixed top-0 left-0 right-0 z-50 py-6 bg-background/80 backdrop-blur-sm">
-      <div className="max-w-6xl mx-auto px-6">
+      <div className="max-w-6xl mx-auto px-6 flex items-center justify-between md:justify-center relative">
         {/* Desktop */}
         <div className="hidden md:flex items-center justify-center gap-0">
           {links.map((link, i) => (
@@ -25,6 +26,7 @@ const Navbar = () => {
                 href={link.href}
                 className="nav-link px-4 py-1 active:opacity-50 transition-opacity"
                 onClick={playClick}
+                onMouseEnter={playHover}
                 onTouchStart={playClick}
                 target={link.href.startsWith('http') ? '_blank' : undefined}
                 rel={
@@ -42,18 +44,28 @@ const Navbar = () => {
           ))}
         </div>
 
+        {/* Desktop Sound Toggle (Absolute Right) */}
+        <div className="hidden md:block absolute right-6">
+          <SoundToggle />
+        </div>
+
         {/* Mobile toggle */}
-        <div className="md:hidden flex justify-center">
+        <div className="md:hidden flex justify-between w-full items-center">
+          <div className="w-10" /> {/* Spacer to center menu */}
           <button
             onClick={() => {
               playClick();
               setOpen(!open);
             }}
+            onMouseEnter={playHover}
             onTouchStart={playClick}
             className="nav-link active:scale-95 transition-transform"
           >
             {open ? 'Close' : 'Menu'}
           </button>
+          <div className="scale-75">
+            <SoundToggle />
+          </div>
         </div>
 
         {/* Mobile menu */}
@@ -63,11 +75,12 @@ const Navbar = () => {
               <a
                 key={link.href}
                 href={link.href}
-                className="nav-link text-lg active:scale-95 transition-transform"
+                className="nav-link text-base active:scale-95 transition-transform"
                 onClick={() => {
                   playClick();
                   setOpen(false);
                 }}
+                onMouseEnter={playHover}
                 onTouchStart={playClick}
                 target={link.href.startsWith('http') ? '_blank' : undefined}
                 rel={

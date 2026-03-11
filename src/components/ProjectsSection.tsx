@@ -9,7 +9,7 @@ const projects = [
     title: 'AI Voice Editor',
     isNew: true,
     description:
-      'A mystical, AI-driven document editor where your voice commands reshape text in real time. Upload a PDF, speak your intent, and watch the Gilded Voice Scribe bring your words to life.',
+      'AI-driven document editor that uses real-time voice commands to edit and reshape text.',
     tags: [
       'React',
       'TypeScript',
@@ -25,7 +25,7 @@ const projects = [
   {
     title: 'SafeTrip Pro',
     description:
-      'A premium, AI-powered navigation and safety companion featuring real-time intelligence, drowsiness detection, SOS guardian network, and predictive analytics for a safer driving experience.',
+      'AI-powered safety navigation featuring drowsiness detection and real-time emergency alerts.',
     tags: [
       'React',
       'TypeScript',
@@ -41,7 +41,7 @@ const projects = [
   {
     title: 'Academy of Tech Masters (AOTMS)',
     description:
-      'A premier tech education platform featuring AI-powered assistance, interactive student dashboards, and comprehensive course management. Delivered as a high-performance freelance project for a real-world client.',
+      'Tech education platform with AI assistance and interactive student management for real-world clients.',
     tags: [
       'React',
       'TypeScript',
@@ -56,7 +56,7 @@ const projects = [
   {
     title: 'Elara Cosmetics',
     description:
-      'A luxury Ayurvedic e-commerce platform with a focus on premium user experience. Features category-based filtering, shopping cart, wishlist, and a custom WhatsApp-integrated checkout system.',
+      'Luxury Ayurvedic e-commerce platform featuring a custom WhatsApp-integrated checkout system.',
     tags: ['React', 'TypeScript', 'Tailwind', 'Vite', 'Shadcn UI', 'Vitest'],
     githubUrl:
       'https://github.com/VARA4u-tech/Elara-Cosmetics-E--Commerce-Website-',
@@ -65,7 +65,7 @@ const projects = [
   {
     title: 'EduPredict',
     description:
-      'An AI-powered predictive analytics system for student success, featuring a unique comic book-inspired UI, interactive dashboards, and real-time at-risk student alerts.',
+      'AI predictive analytics for student success with a unique comic book-inspired interface.',
     tags: [
       'React',
       'TypeScript',
@@ -80,7 +80,7 @@ const projects = [
   {
     title: 'SmartQuack',
     description:
-      'A delightful, offline-first task manager with a gamified twist! Features a reactive duck mascot that changes moods based on your productivity progress.',
+      'Gamified task manager featuring a reactive duck mascot that tracks your productivity progress.',
     tags: ['Flutter', 'Riverpod', 'Firebase', 'Hive', 'Dart'],
     githubUrl: 'https://github.com/VARA4u-tech/my-first-flutter-app',
     liveUrl: 'https://github.com/VARA4u-tech/my-first-flutter-app',
@@ -89,12 +89,12 @@ const projects = [
 
 const ProjectsSection = () => (
   <SectionBlock id="projects" title="Projects">
-    <div className="flex md:grid md:grid-cols-2 lg:grid-cols-3 gap-8 overflow-x-auto md:overflow-x-visible pt-6 pb-12 md:py-0 snap-x snap-mandatory scrollbar-hide">
+    <div className="flex md:grid md:grid-cols-2 lg:grid-cols-2 gap-8 overflow-x-auto md:overflow-x-visible pt-6 pb-12 md:py-0 snap-x snap-mandatory scrollbar-hide">
       {projects.map((project) => (
         <div
           key={project.title}
           onMouseEnter={playHover}
-          className="group relative border-2 border-black p-6 flex flex-col justify-between hover:shadow-[10px_10px_0px_0px_rgba(0,0,0,1)] hover:-translate-x-1 hover:-translate-y-1 transition-all duration-300 bg-white min-w-[290px] w-[85vw] md:w-auto md:min-w-0 snap-start"
+          className="group relative border-2 border-black p-8 flex flex-col justify-between hover:shadow-[10px_10px_0px_0px_rgba(0,0,0,1)] hover:-translate-x-1 hover:-translate-y-1 transition-all duration-300 bg-white min-w-[300px] w-full md:w-auto snap-start"
         >
           {'isNew' in project && project.isNew && (
             <div className="absolute -top-3 -right-3 bg-black text-white px-3 py-1 text-[10px] font-black uppercase tracking-tighter border-2 border-black z-10 rotate-12 group-hover:rotate-6 transition-transform">
@@ -102,7 +102,7 @@ const ProjectsSection = () => (
             </div>
           )}
           <div>
-            <h3 className="text-2xl font-black text-foreground group-hover:underline decoration-4 underline-offset-4">
+            <h3 className="text-xl font-black text-foreground group-hover:underline decoration-4 underline-offset-4">
               {project.title}
             </h3>
             <p className="body-text mt-4 text-sm font-normal leading-relaxed">
