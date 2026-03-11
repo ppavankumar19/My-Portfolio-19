@@ -338,7 +338,7 @@ const Terminal = () => {
             setIsOpen(true);
           }}
           onTouchStart={playTerminalOpen}
-          className="p-3 bg-white border border-black shadow-[4px_4px_0px_0px_rgba(0,0,0,1)] hover:bg-black hover:text-white transition-all duration-300 active:scale-95"
+          className="p-3 bg-white border border-black shadow-[4px_4px_0px_0px_rgba(0,0,0,1)] hover:bg-black hover:text-white transition-all duration-300 active:scale-95 rounded-xl"
           aria-label="Open Terminal"
         >
           <TerminalIcon className="w-5 h-5" />
@@ -356,7 +356,7 @@ const Terminal = () => {
       onTouchEnd={handleTouchEnd}
     >
       <div
-        className={`bg-[#0c0c0c] border border-white/20 shadow-[8px_8px_0px_0px_rgba(255,255,255,0.1)] w-full transition-all duration-300 flex flex-col font-mono text-sm md:text-base selection:bg-white/20 active:border-white/40 ${
+        className={`bg-[#0c0c0c] border border-white/20 shadow-[8px_8px_0px_0px_rgba(255,255,255,0.1)] w-full transition-all duration-300 flex flex-col font-mono text-sm md:text-base selection:bg-white/20 active:border-white/40 rounded-xl overflow-hidden ${
           isMaximized ? 'h-[95vh] w-[95vw]' : 'max-w-2xl h-[600px]'
         }`}
         onClick={(e) => e.stopPropagation()}

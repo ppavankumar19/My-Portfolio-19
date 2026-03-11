@@ -94,13 +94,13 @@ const SkillsSection = () => {
           {skillCategories.map((category, idx) => (
             <div
               key={category.title}
-              className="group border-2 border-black p-6 bg-white hover:-translate-y-1 transition-all duration-300 relative"
+              className="group border-2 border-black p-6 bg-white hover:-translate-y-1 transition-all duration-300 relative rounded-2xl"
               style={{
                 animationDelay: `${idx * 100}ms`,
               }}
             >
               <div className="flex items-center gap-3 mb-6">
-                <div className="p-2 border-2 border-black bg-black text-white group-hover:bg-white group-hover:text-black transition-colors">
+                <div className="p-2 border-2 border-black bg-black text-white group-hover:bg-white group-hover:text-black transition-colors rounded-lg">
                   {category.icon}
                 </div>
                 <h3 className="font-mono text-sm font-bold uppercase tracking-wide">
@@ -112,7 +112,7 @@ const SkillsSection = () => {
                 {category.skills.map((skill) => (
                   <span
                     key={skill}
-                    className="px-2 py-1 border border-black/10 text-[11px] font-mono hover:border-black hover:bg-black/5 transition-all cursor-default"
+                    className="px-2 py-1 border border-black/10 text-[11px] font-mono hover:border-black hover:bg-black/5 transition-all cursor-default rounded-md"
                   >
                     {skill}
                   </span>
@@ -122,7 +122,7 @@ const SkillsSection = () => {
           ))}
 
           {/* Final "Load" Card */}
-          <div className="border-2 border-black p-6 bg-black/5 flex flex-col items-center justify-center text-center opacity-60 hover:opacity-100 transition-opacity">
+          <div className="border-2 border-black p-6 bg-black/5 flex flex-col items-center justify-center text-center opacity-60 hover:opacity-100 transition-opacity rounded-2xl">
             <Box className="w-8 h-8 mb-4 opacity-20" />
             <p className="font-mono text-[10px] uppercase tracking-[0.2em] font-medium">
               // Always Learning...
