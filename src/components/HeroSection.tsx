@@ -119,7 +119,7 @@ const HeroSection = () => {
 
       {/* Top-left code comment */}
       <div className="absolute top-28 left-6 md:left-10 z-10 hidden md:block">
-        <p className="font-mono text-xs text-foreground/60 leading-relaxed font-medium">
+        <p className="font-mono text-xs text-foreground/90 leading-relaxed font-medium">
           // portfolio.tsx
           <br />
           // version: 3.0.0
@@ -132,7 +132,7 @@ const HeroSection = () => {
 
       {/* Top-right line numbers */}
       <div className="absolute top-28 right-6 md:right-10 z-10 hidden md:block">
-        <p className="font-mono text-xs text-foreground/40 leading-relaxed text-right font-medium">
+        <p className="font-mono text-xs text-foreground/80 leading-relaxed text-right font-medium">
           {Array.from({ length: 6 }, (_, i) => (
             <span key={i} className="block">
               {String(i + 1).padStart(3, '0')}
@@ -259,14 +259,14 @@ const HeroSection = () => {
 
       {/* Bottom-left info */}
       <div className="absolute bottom-10 left-6 md:left-10 z-10">
-        <span className="text-foreground/80 text-xs tracking-[0.2em] uppercase font-mono font-medium">
+        <span className="text-foreground text-xs tracking-[0.2em] uppercase font-mono font-medium">
           www.prasad.dev
         </span>
       </div>
 
       {/* Bottom-right stats */}
       <div className="absolute bottom-10 right-6 md:right-10 z-10 hidden md:block">
-        <div className="font-mono text-xs text-foreground/80 text-right leading-relaxed font-medium">
+        <div className="font-mono text-xs text-foreground text-right leading-relaxed font-medium">
           <p>const experience = "2+ years";</p>
           <p>const projects = 10;</p>
           <p>const passion = Infinity;</p>
@@ -275,7 +275,7 @@ const HeroSection = () => {
 
       {/* Scroll indicator */}
       <div className="absolute bottom-10 left-1/2 -translate-x-1/2 z-10">
-        <ChevronDown className="w-5 h-5 text-foreground/30 animate-bounce" />
+        <ChevronDown className="w-5 h-5 text-foreground/60 animate-bounce" />
       </div>
     </section>
   );
