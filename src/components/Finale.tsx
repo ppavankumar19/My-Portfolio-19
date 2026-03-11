@@ -101,7 +101,7 @@ const Finale = () => {
             </span>
           </div>
           <p className="text-xs font-mono text-black/70 uppercase tracking-widest leading-loose max-w-sm">
-            From India 🇮🇳 to the World 🌍 • Crafting Scalable Digital Products
+            Driving Digital Innovation & Building Scalable Tech Products 🌍
           </p>
         </div>
       </div>
