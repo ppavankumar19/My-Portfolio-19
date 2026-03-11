@@ -8,7 +8,7 @@ const links = [
   { label: 'Experience', href: '#experience' },
   { label: 'Work', href: '#projects' },
   { label: 'Technical Skills', href: '#skills' },
-  { label: 'Blog', href: 'https://durgavaraprasad.hashnode.dev/' },
+  { label: 'Blog', href: '#blog' },
   { label: 'Contact', href: '#contact' },
 ];
 
