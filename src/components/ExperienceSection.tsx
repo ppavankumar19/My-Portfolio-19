@@ -22,20 +22,20 @@ const ExperienceSection = () => (
             <div className="hidden md:block absolute top-1 -right-[5px] w-[9px] h-[9px] rounded-full bg-black"></div>
             <div className="md:hidden absolute top-1 -left-[5px] w-[9px] h-[9px] rounded-full bg-black"></div>
 
-            <h4 className="font-mono text-sm tracking-widest text-foreground/60 uppercase mb-1">
+            <h4 className="font-mono text-xs tracking-widest text-foreground/60 uppercase mb-1">
               {exp.period}
             </h4>
-            <h3 className="font-bold text-lg md:text-xl">{exp.company}</h3>
+            <h3 className="font-bold text-base md:text-lg">{exp.company}</h3>
           </div>
 
           <div className="mt-2 md:mt-0">
-            <h3 className="text-lg font-bold text-foreground md:hidden mb-2">
+            <h3 className="text-base font-bold text-foreground md:hidden mb-2">
               {exp.role}
             </h3>
-            <h3 className="text-xl font-bold text-foreground hidden md:block mb-3">
+            <h3 className="text-lg font-bold text-foreground hidden md:block mb-3">
               {exp.role}
             </h3>
-            <p className="body-text text-sm md:text-base">{exp.description}</p>
+            <p className="body-text text-sm">{exp.description}</p>
           </div>
         </div>
       ))}

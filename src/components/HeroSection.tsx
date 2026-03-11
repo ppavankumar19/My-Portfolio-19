@@ -9,6 +9,7 @@ import {
   InstagramIcon,
   BookOpen,
 } from 'lucide-react';
+import Magnetic from './Magnetic';
 
 const roles = [
   'Flutter Developer',
@@ -153,29 +154,33 @@ const HeroSection = () => {
         {/* Name */}
         <h1
           className="heading-brutal leading-[0.85]"
-          style={{ fontSize: 'clamp(48px, 10vw, 130px)' }}
+          style={{ fontSize: 'clamp(40px, 8vw, 110px)' }}
         >
-          Durga Vara
+          <div className="glitch-text" data-text="Durga Vara">
+            Durga Vara
+          </div>
           <br />
-          <span className="text-foreground/20">Prasad.</span>
+          <div className="glitch-text" data-text="Prasad.">
+            <span className="text-foreground/20">Prasad.</span>
+          </div>
         </h1>
 
         {/* Typewriter role */}
         <div className="mt-6 h-8 flex items-center justify-center">
-          <span className="font-mono text-sm md:text-base tracking-[0.2em] text-foreground/50">
+          <span className="font-mono text-xs md:text-sm tracking-[0.2em] text-foreground/50">
             {'< '}
           </span>
-          <span className="font-mono text-sm md:text-base tracking-[0.15em] text-foreground/70 font-medium">
+          <span className="font-mono text-xs md:text-sm tracking-[0.15em] text-foreground/70 font-medium">
             {displayText}
           </span>
           <span
-            className={`font-mono text-sm md:text-base text-foreground/70 ${
+            className={`font-mono text-xs md:text-sm text-foreground/70 ${
               cursorVisible ? 'opacity-100' : 'opacity-0'
             }`}
           >
             |
           </span>
-          <span className="font-mono text-sm md:text-base tracking-[0.2em] text-foreground/50">
+          <span className="font-mono text-xs md:text-sm tracking-[0.2em] text-foreground/50">
             {' />'}
           </span>
         </div>
@@ -229,31 +234,34 @@ const HeroSection = () => {
               label: 'Email',
             },
           ].map(({ Icon, href, label }, i) => (
-            <a
-              key={i}
-              href={href}
-              target="_blank"
-              rel="noopener noreferrer"
-              aria-label={label}
-              onClick={playClick}
-              className="group relative inline-flex items-center justify-center p-3 border-2 border-black bg-white text-black transition-all duration-300 shadow-[4px_4px_0px_0px_rgba(0,0,0,1)] hover:shadow-none hover:translate-x-[4px] hover:translate-y-[4px] hover:bg-black hover:text-white"
-            >
-              <Icon className="w-5 h-5" />
-            </a>
+            <Magnetic key={i} strength={0.3}>
+              <a
+                href={href}
+                target="_blank"
+                rel="noopener noreferrer"
+                aria-label={label}
+                onClick={playClick}
+                className="group relative inline-flex items-center justify-center p-3 border-2 border-black bg-white text-black transition-all duration-300 shadow-[4px_4px_0px_0px_rgba(0,0,0,1)] hover:shadow-none hover:translate-x-[4px] hover:translate-y-[4px] hover:bg-black hover:text-white"
+              >
+                <Icon className="w-5 h-5" />
+              </a>
+            </Magnetic>
           ))}
         </div>
 
         {/* Resume button */}
         <div className="mt-10">
-          <a
-            href="/resume.pdf"
-            download="Durga_Vara_Prasad_Resume.pdf"
-            onClick={playClick}
-            className="group relative inline-flex items-center gap-2 px-8 py-4 border-2 border-black bg-black text-white text-sm font-bold tracking-[0.2em] uppercase transition-all duration-300 shadow-[8px_8px_0px_0px_rgba(0,0,0,0.2)] hover:bg-white hover:text-black hover:shadow-[8px_8px_0px_0px_rgba(0,0,0,1)]"
-          >
-            <span>Download Resume</span>
-            <span className="w-2 h-2 border-r-2 border-b-2 border-current rotate-45 -translate-y-[1px] group-hover:translate-y-[1px] transition-transform duration-300"></span>
-          </a>
+          <Magnetic strength={0.1}>
+            <a
+              href="/resume.pdf"
+              download="Durga_Vara_Prasad_Resume.pdf"
+              onClick={playClick}
+              className="group relative inline-flex items-center gap-2 px-8 py-4 border-2 border-black bg-black text-white text-sm font-bold tracking-[0.2em] uppercase transition-all duration-300 shadow-[8px_8px_0px_0px_rgba(0,0,0,0.2)] hover:bg-white hover:text-black hover:shadow-[8px_8px_0px_0px_rgba(0,0,0,1)]"
+            >
+              <span>Download Resume</span>
+              <span className="w-2 h-2 border-r-2 border-b-2 border-current rotate-45 -translate-y-[1px] group-hover:translate-y-[1px] transition-transform duration-300"></span>
+            </a>
+          </Magnetic>
         </div>
       </div>
 
