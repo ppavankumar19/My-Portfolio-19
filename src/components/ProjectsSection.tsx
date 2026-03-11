@@ -146,6 +146,19 @@ const ProjectsSection = () => (
         </div>
       ))}
     </div>
+
+    <div className="mt-12 flex justify-center md:justify-start">
+      <a
+        href="https://github.com/VARA4u-tech"
+        target="_blank"
+        rel="noopener noreferrer"
+        onClick={playClick}
+        className="group flex items-center gap-2 text-xs font-black uppercase tracking-[0.2em] border-b-2 border-black pb-1 hover:gap-4 transition-all"
+      >
+        <Github className="w-4 h-4" />
+        View All Projects
+      </a>
+    </div>
   </SectionBlock>
 );
 
