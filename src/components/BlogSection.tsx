@@ -92,10 +92,10 @@ const BlogSection = () => {
             posts.map((post) => (
               <article
                 key={post.url}
-                className="group relative border-2 border-black bg-white p-4 flex flex-col transition-all duration-300 hover:shadow-[8px_8px_0px_0px_rgba(0,0,0,1)] hover:-translate-x-1 hover:-translate-y-1"
+                className="group relative border-4 border-black bg-white p-4 flex flex-col transition-all duration-300 hover:shadow-[8px_8px_0px_0px_rgba(0,0,0,1)] hover:-translate-x-1 hover:-translate-y-1"
                 onMouseEnter={playHover}
               >
-                <div className="relative h-48 mb-4 overflow-hidden border-2 border-black">
+                <div className="relative h-48 mb-4 overflow-hidden border-4 border-black">
                   <img
                     src={post.coverImage.url}
                     alt={post.title}
