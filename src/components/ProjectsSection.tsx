@@ -6,6 +6,15 @@ import { playHover, playClick } from '@/hooks/useSoundEffects';
 
 const projects = [
   {
+    title: 'VaakAI — Communication Analyzer',
+    isCurrent: true,
+    description:
+      'AI-powered web app that analyzes video recordings of interviews, presentations, and demos to improve spoken communication. Features verbatim transcripts with Indian language support, filler word detection, vocabulary scoring, radar charts, and RAG-based Q&A on sessions.',
+    tags: ['Python', 'FastAPI', 'Groq', 'Sarvam.ai', 'ChromaDB', 'PostgreSQL'],
+    githubUrl: 'https://github.com/ppavankumar19/VaakAI',
+    liveUrl: 'https://github.com/ppavankumar19/VaakAI',
+  },
+  {
     title: 'Atlas — AI Travel Planner',
     isNew: true,
     description:
@@ -15,23 +24,16 @@ const projects = [
     liveUrl: 'https://atlas.19062002.xyz',
   },
   {
-    title: 'ChemSus Technologies',
+    title: 'LinuxDojo — Linux Learning Platform',
     description:
-      'Production e-commerce platform with Supabase Auth (email + Google OAuth), UPI payments, OTP checkout, item-level order tracking, in-order messaging, and a full admin dashboard.',
-    tags: ['Node.js', 'Express', 'PostgreSQL', 'Supabase', 'Vanilla JS'],
-    githubUrl: 'https://github.com/ppavankumar19/ChemSus-Technologies-Pvt-LTD',
-    liveUrl: 'https://chemsus-technologies-pvt-ltd.onrender.com',
-  },
-  {
-    title: 'VocabHub',
-    description:
-      'Vocabulary learning platform with daily word streaks, user profiles, community contributions, and an admin dashboard for content moderation and analytics.',
-    tags: ['Node.js', 'Express', 'SQLite', 'JavaScript'],
-    githubUrl: 'https://github.com/ppavankumar19/vocabhub',
-    liveUrl: 'https://github.com/ppavankumar19/vocabhub',
+      'Interactive web platform to master Linux/Ubuntu commands through structured exercises and progress tracking. Features terminal demo videos via Asciinema, GitHub OAuth, admin dashboard, and mobile-first responsive design.',
+    tags: ['Node.js', 'Express', 'Supabase', 'HTML', 'CSS', 'JavaScript'],
+    githubUrl: 'https://github.com/ppavankumar19/Linuxdojo',
+    liveUrl: 'https://github.com/ppavankumar19/Linuxdojo',
   },
   {
     title: 'High-Demand Crops Analysis',
+    isFinalYear: true,
     description:
       'Identifies high-demand crops where India lags globally and visualises data to highlight agricultural growth and investment opportunities. Focused on EDA and data storytelling.',
     tags: ['Python', 'Pandas', 'Power BI', 'Google Colab'],
@@ -49,9 +51,19 @@ const ProjectsSection = () => (
           onMouseEnter={playHover}
           className="group relative border-4 border-black p-8 flex flex-col justify-between hover:shadow-[10px_10px_0px_0px_rgba(0,0,0,1)] hover:-translate-x-1 hover:-translate-y-1 transition-all duration-300 bg-white min-w-[300px] w-full md:w-auto snap-start rounded-2xl"
         >
+          {'isCurrent' in project && project.isCurrent && (
+            <div className="absolute -top-3 -right-3 bg-green-500 text-white px-3 py-1 text-[10px] font-black uppercase tracking-tighter border-4 border-black z-10 rotate-12 group-hover:rotate-6 transition-transform rounded-lg">
+              CURRENTLY WORKING
+            </div>
+          )}
           {'isNew' in project && project.isNew && (
             <div className="absolute -top-3 -right-3 bg-black text-white px-3 py-1 text-[10px] font-black uppercase tracking-tighter border-4 border-black z-10 rotate-12 group-hover:rotate-6 transition-transform rounded-lg">
               LATEST WORK
+            </div>
+          )}
+          {'isFinalYear' in project && project.isFinalYear && (
+            <div className="absolute -top-3 -right-3 bg-blue-600 text-white px-3 py-1 text-[10px] font-black uppercase tracking-tighter border-4 border-black z-10 rotate-12 group-hover:rotate-6 transition-transform rounded-lg">
+              FINAL YEAR PROJECT
             </div>
           )}
           <div>
