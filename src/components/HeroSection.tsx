@@ -33,7 +33,7 @@ const calcExperience = () => {
   return years > 0 ? `${years}+ year${years > 1 ? 's' : ''}` : `${months}+ months`;
 };
 
-const PROJECTS_TARGET = 6;
+const PROJECTS_TARGET = 9;
 
 const HeroSection = () => {
   const [roleIndex, setRoleIndex] = useState(0);
