@@ -6,84 +6,37 @@ import { playHover, playClick } from '@/hooks/useSoundEffects';
 
 const projects = [
   {
-    title: 'AI Voice Editor',
+    title: 'Atlas — AI Travel Planner',
     isNew: true,
     description:
-      'AI-driven document editor that uses real-time voice commands to edit and reshape text.',
-    tags: [
-      'React',
-      'TypeScript',
-      'Tailwind',
-      'AI',
-      'Speech Recognition',
-      'Vite',
-      'Supabase',
-    ],
-    githubUrl: 'https://github.com/VARA4u-tech/AI-Voice-Editor',
-    liveUrl: 'https://ai-voice-editor-4rpa.vercel.app',
+      'Full-stack AI travel planner powered by Groq Llama 3.3 70B. Generates day-by-day itineraries with live Airbnb listings, interactive Leaflet.js maps, 150+ currency conversion, and PDF/calendar export.',
+    tags: ['Python', 'Flask', 'Groq', 'Agno', 'Leaflet.js', 'Vercel'],
+    githubUrl: 'https://github.com/ppavankumar19/atlas-travel-planner',
+    liveUrl: 'https://atlas.19062002.xyz',
   },
   {
-    title: 'SafeTrip Pro',
+    title: 'ChemSus Technologies',
     description:
-      'AI-powered safety navigation featuring drowsiness detection and real-time emergency alerts.',
-    tags: [
-      'React',
-      'TypeScript',
-      'Tailwind',
-      'Supabase',
-      'Framer Motion',
-      'Vite',
-    ],
-    githubUrl:
-      'https://github.com/VARA4u-tech/safe-trip-smart-driving-safety-application',
-    liveUrl: 'https://safe-trip-smart-driving-safety-appl.vercel.app',
+      'Production e-commerce platform with Supabase Auth (email + Google OAuth), UPI payments, OTP checkout, item-level order tracking, in-order messaging, and a full admin dashboard.',
+    tags: ['Node.js', 'Express', 'PostgreSQL', 'Supabase', 'Vanilla JS'],
+    githubUrl: 'https://github.com/ppavankumar19/ChemSus-Technologies-Pvt-LTD',
+    liveUrl: 'https://chemsus-technologies-pvt-ltd.onrender.com',
   },
   {
-    title: 'Academy of Tech Masters (AOTMS)',
+    title: 'VocabHub',
     description:
-      'Tech education platform with AI assistance and interactive student management for real-world clients.',
-    tags: [
-      'React',
-      'TypeScript',
-      'Tailwind',
-      'Vite',
-      'Zustand',
-      'Framer Motion',
-    ],
-    githubUrl: 'https://github.com/VARA4u-tech/AOTMS',
-    liveUrl: 'https://aotms.in',
+      'Vocabulary learning platform with daily word streaks, user profiles, community contributions, and an admin dashboard for content moderation and analytics.',
+    tags: ['Node.js', 'Express', 'SQLite', 'JavaScript'],
+    githubUrl: 'https://github.com/ppavankumar19/vocabhub',
+    liveUrl: 'https://github.com/ppavankumar19/vocabhub',
   },
   {
-    title: 'Elara Cosmetics',
+    title: 'High-Demand Crops Analysis',
     description:
-      'Luxury Ayurvedic e-commerce platform featuring a custom WhatsApp-integrated checkout system.',
-    tags: ['React', 'TypeScript', 'Tailwind', 'Vite', 'Shadcn UI', 'Vitest'],
-    githubUrl:
-      'https://github.com/VARA4u-tech/Elara-Cosmetics-E--Commerce-Website-',
-    liveUrl: 'https://elara-cosmetics.vercel.app/',
-  },
-  {
-    title: 'EduPredict',
-    description:
-      'AI predictive analytics for student success with a unique comic book-inspired interface.',
-    tags: [
-      'React',
-      'TypeScript',
-      'Tailwind',
-      'Vite',
-      'Lucide React',
-      'Framer Motion',
-    ],
-    githubUrl: 'https://github.com/VARA4u-tech/EduPredict',
-    liveUrl: 'https://edu-pridect.vercel.app/',
-  },
-  {
-    title: 'SmartQuack',
-    description:
-      'Gamified task manager featuring a reactive duck mascot that tracks your productivity progress.',
-    tags: ['Flutter', 'Riverpod', 'Firebase', 'Hive', 'Dart'],
-    githubUrl: 'https://github.com/VARA4u-tech/my-first-flutter-app',
-    liveUrl: 'https://github.com/VARA4u-tech/my-first-flutter-app',
+      'Identifies high-demand crops where India lags globally and visualises data to highlight agricultural growth and investment opportunities. Focused on EDA and data storytelling.',
+    tags: ['Python', 'Pandas', 'Power BI', 'Google Colab'],
+    githubUrl: 'https://github.com/ppavankumar19/high-demand-crops',
+    liveUrl: 'https://github.com/ppavankumar19/high-demand-crops',
   },
 ];
 
@@ -149,7 +102,7 @@ const ProjectsSection = () => (
 
     <div className="mt-12 flex justify-center md:justify-start">
       <a
-        href="https://github.com/VARA4u-tech"
+        href="https://github.com/ppavankumar19"
         target="_blank"
         rel="noopener noreferrer"
         onClick={playClick}
