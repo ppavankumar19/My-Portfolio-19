@@ -3,8 +3,6 @@ import {
   Linkedin,
   ArrowUp,
   Heart,
-  InstagramIcon,
-  BookOpen,
 } from 'lucide-react';
 
 const Footer = () => {
@@ -15,21 +13,11 @@ const Footer = () => {
   };
 
   const socialLinks = [
-    { icon: Github, href: 'https://github.com/VARA4u-tech', label: 'GitHub' },
+    { icon: Github, href: 'https://github.com/ppavankumar19', label: 'GitHub' },
     {
       icon: Linkedin,
-      href: 'https://linkedin.com/in/vara4u',
+      href: 'https://linkedin.com/in/pavankumar19',
       label: 'LinkedIn',
-    },
-    {
-      icon: InstagramIcon,
-      href: 'https://instagram.com/d_v_p6',
-      label: 'Instagram',
-    },
-    {
-      icon: BookOpen,
-      href: 'https://durgavaraprasad.hashnode.dev/',
-      label: 'Blog',
     },
   ];
 
@@ -49,12 +37,12 @@ const Footer = () => {
           {/* Brand Column */}
           <div className="md:col-span-2 space-y-6">
             <h2 className="text-xl font-black uppercase tracking-tighter italic">
-              DURGA VARA PRASAD<span className="text-foreground">.....</span>
+              PAVAN KUMAR PONNURI<span className="text-foreground">.....</span>
             </h2>
             <p className="text-foreground/60 max-w-sm leading-relaxed">
-              Full-stack developer focused on building high-performance web
-              applications with clean, functional design and exceptional user
-              experience.
+              AI-Native Software Engineer building backend systems and GenAI
+              products. Based in Hyderabad, India. Open to full-time roles
+              and freelance work.
             </p>
             <div className="flex gap-4">
               {socialLinks.map((link) => (
@@ -109,12 +97,12 @@ const Footer = () => {
         {/* Bottom Bar */}
         <div className="pt-8 border-t border-black/5 flex flex-col md:flex-row justify-between items-center gap-6 px-4 md:px-12 lg:px-0">
           <p className="text-xs font-mono text-black/40 uppercase tracking-widest text-center md:text-left">
-            © {currentYear} Pappuri Durga Vara Prasad
+            © {currentYear} Pavan Kumar Ponnuri
           </p>
           <p className="text-xs font-mono text-black/40 flex items-center justify-center gap-2 uppercase tracking-widest text-center md:text-right">
             Designed & Engineered with{' '}
             <Heart className="w-3.5 h-3.5 text-black fill-black animate-heartbeat inline-block" />{' '}
-            by Vara
+            by Pavan
           </p>
         </div>
       </div>
