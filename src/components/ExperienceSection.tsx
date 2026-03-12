@@ -2,11 +2,11 @@ import SectionBlock from './SectionBlock';
 
 const experiences = [
   {
-    role: 'MERN Stack Developer (Freelance)',
-    company: 'Academy of Tech Masters (AOTMS)',
-    period: '[23DEC 2025 – 23JAN 2026]',
+    role: 'Data Analytics Intern',
+    company: 'GrrowUp',
+    period: 'Jun 2024 – Aug 2024 · Remote · 8 Weeks',
     description:
-      '🚀Freelance Project – Successfully Delivered Completed a real-world client project with my team using [Tech Stack – e.g., React, Node.js, MongoDB]. Key learnings: 🔹 Building scalable features 🔹 Team collaboration & Git workflows 🔹 Meeting client expectations & deadlines.',
+      'Intensive 8-week Data Analytics internship gaining hands-on exposure to the full analytics workflow — from raw data ingestion to storytelling dashboards presented to stakeholders. Performed end-to-end EDA on real-world datasets, built data cleaning pipelines, created interactive dashboards in Tableau and Google Sheets, wrote complex SQL queries, and developed web scraping scripts. Capstone: data storytelling from raw CSV to executive summary.',
   },
 ];
 
