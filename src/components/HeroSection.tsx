@@ -33,12 +33,16 @@ const calcExperience = () => {
   return years > 0 ? `${years}+ year${years > 1 ? 's' : ''}` : `${months}+ months`;
 };
 
+const PROJECTS_TARGET = 6;
+
 const HeroSection = () => {
   const [roleIndex, setRoleIndex] = useState(0);
   const [displayText, setDisplayText] = useState('');
   const [isDeleting, setIsDeleting] = useState(false);
   const [cursorVisible, setCursorVisible] = useState(true);
   const canvasRef = useRef<HTMLCanvasElement>(null);
+  const [animProjects, setAnimProjects] = useState(0);
+  const [animExpNum, setAnimExpNum] = useState(0);
 
   // Blinking cursor
   useEffect(() => {
@@ -70,6 +74,24 @@ const HeroSection = () => {
 
     return () => clearTimeout(timeout);
   }, [displayText, isDeleting, roleIndex]);
+
+  // Counting animation for stats
+  useEffect(() => {
+    const expFull = calcExperience();
+    const expTarget = parseInt(expFull);
+    const steps = 40;
+    const duration = 1400;
+    const interval = duration / steps;
+    let step = 0;
+    const timer = setInterval(() => {
+      step++;
+      const eased = 1 - Math.pow(1 - step / steps, 3);
+      setAnimExpNum(Math.round(eased * expTarget));
+      setAnimProjects(Math.round(eased * PROJECTS_TARGET));
+      if (step >= steps) clearInterval(timer);
+    }, interval);
+    return () => clearInterval(timer);
+  }, []);
 
   // Matrix-style rain effect
   useEffect(() => {
@@ -277,8 +299,8 @@ const HeroSection = () => {
       {/* Bottom-right stats */}
       <div className="absolute bottom-10 right-6 md:right-10 z-10 hidden md:block">
         <div className="font-mono text-xs text-foreground text-right leading-relaxed font-medium">
-          <p>const experience = "{calcExperience()}";</p>
-          <p>const projects = 4;</p>
+          <p>const experience = "{animExpNum}{calcExperience().slice(calcExperience().indexOf('+'))}";</p>
+          <p>const projects = {animProjects}+;</p>
           <p>const passion = Infinity;</p>
         </div>
       </div>
