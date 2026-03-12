@@ -3,19 +3,18 @@ import { playClick, playHover } from '@/hooks/useSoundEffects';
 import {
   Github,
   Linkedin,
-  Twitter,
   Mail,
   ChevronDown,
-  InstagramIcon,
-  BookOpen,
 } from 'lucide-react';
 import Magnetic from './Magnetic';
 
 const roles = [
-  'Flutter Developer',
-  'React Engineer',
-  'Blockchain Builder',
-  'Full-Stack Creator',
+  'Backend Architect',
+  'Full Stack Engineer',
+  'GenAI Builder',
+  'Freelance Developer',
+  'LLM Integrator',
+  'System Designer',
 ];
 
 const HeroSection = () => {
@@ -148,12 +147,12 @@ const HeroSection = () => {
           className="heading-brutal leading-[0.85]"
           style={{ fontSize: 'clamp(65px, 13vw, 140px)' }}
         >
-          <div className="glitch-text" data-text="Durga Vara">
-            Durga Vara
+          <div className="glitch-text" data-text="Pavan Kumar">
+            Pavan Kumar
           </div>
           <br />
-          <div className="glitch-text" data-text="Prasad.">
-            <span className="text-foreground/20">Prasad.</span>
+          <div className="glitch-text" data-text="Ponnuri.">
+            <span className="text-foreground/20">Ponnuri.</span>
           </div>
         </h1>
 
@@ -180,12 +179,12 @@ const HeroSection = () => {
         {/* Tech tags */}
         <div className="flex flex-wrap gap-2 justify-center mt-8 max-w-md mx-auto">
           {[
-            'Flutter',
-            'React',
-            'TypeScript',
-            'Firebase',
-            'Blockchain',
+            'Python',
             'Node.js',
+            'TypeScript',
+            'React',
+            'GenAI',
+            'LangChain',
           ].map((tech) => (
             <span
               key={tech}
@@ -202,27 +201,17 @@ const HeroSection = () => {
           {[
             {
               Icon: Github,
-              href: 'https://github.com/VARA4u-tech',
+              href: 'https://github.com/ppavankumar19',
               label: 'GitHub',
             },
             {
               Icon: Linkedin,
-              href: 'https://www.linkedin.com/in/durga-vara-prasad-pappuri-1797701b6/',
+              href: 'https://linkedin.com/in/pavankumar19',
               label: 'LinkedIn',
             },
             {
-              Icon: InstagramIcon,
-              href: 'https://www.instagram.com/d_v_p6/',
-              label: 'Instagram',
-            },
-            {
-              Icon: BookOpen,
-              href: 'https://durgavaraprasad.hashnode.dev/',
-              label: 'Blog',
-            },
-            {
               Icon: Mail,
-              href: 'mailto:pappuridurgavaraprasad4pl@gmail.com',
+              href: 'mailto:pavankumar.prrp@gmail.com',
               label: 'Email',
             },
           ].map(({ Icon, href, label }, i) => (
@@ -245,8 +234,8 @@ const HeroSection = () => {
         <div className="mt-10">
           <Magnetic strength={0.1}>
             <a
-              href="/resume.pdf"
-              download="Durga_Vara_Prasad_Resume.pdf"
+              href="/pavankumarresume.pdf"
+              download="Pavan_Kumar_Ponnuri_Resume.pdf"
               onClick={playClick}
               className="group relative inline-flex items-center gap-2 px-8 py-4 border-2 border-black bg-black text-white text-sm font-bold tracking-[0.2em] uppercase transition-all duration-300 shadow-[8px_8px_0px_0px_rgba(0,0,0,0.2)] hover:bg-white hover:text-black hover:shadow-[8px_8px_0px_0px_rgba(0,0,0,1)] rounded-xl"
             >
@@ -260,15 +249,15 @@ const HeroSection = () => {
       {/* Bottom-left info */}
       <div className="absolute bottom-10 left-6 md:left-10 z-10">
         <span className="text-foreground text-xs tracking-[0.2em] uppercase font-mono font-medium">
-          www.prasad.dev
+          github.com/ppavankumar19
         </span>
       </div>
 
       {/* Bottom-right stats */}
       <div className="absolute bottom-10 right-6 md:right-10 z-10 hidden md:block">
         <div className="font-mono text-xs text-foreground text-right leading-relaxed font-medium">
-          <p>const experience = "2+ years";</p>
-          <p>const projects = 10;</p>
+          <p>const experience = "Fresher";</p>
+          <p>const projects = 4;</p>
           <p>const passion = Infinity;</p>
         </div>
       </div>
