@@ -1,6 +1,5 @@
 import SectionBlock from './SectionBlock';
 import AnimatedAvatar from './AnimatedAvatar';
-import { BookOpen } from 'lucide-react';
 
 const AboutSection = () => (
   <SectionBlock id="about" title="About me">
@@ -8,32 +7,21 @@ const AboutSection = () => (
       <AnimatedAvatar />
       <div className="flex-1">
         <p className="body-text max-w-2xl">
-          I'm a passionate developer with a deep interest in building clean,
-          performant, and user-centric digital experiences. I believe in the
-          power of minimal design and well-crafted code to communicate ideas
-          effectively.
+          I'm an <strong>AI-Native Software Engineer</strong> building backend-heavy systems,
+          full-stack platforms, and GenAI-powered products. B.Tech CSE graduate from
+          GITAM University (2025) with an 8.03 CGPA.
         </p>
         <p className="body-text max-w-2xl mt-6">
-          With experience across mobile and web platforms, I bring a unique
-          perspective to every project — blending technical rigor with creative
-          sensibility.
+          I specialise in <strong>backend architecture</strong>, <strong>full-stack development</strong>,
+          and <strong>Generative AI integrations</strong> — building everything from REST APIs
+          and e-commerce platforms to LLM-powered travel planners.
         </p>
         <p className="body-text max-w-2xl mt-6 mb-8">
-          I embrace the philosophy of <strong>vibe coding</strong>—a modern
-          development approach where technical precision meets creative
-          intuition. By blending AI-assisted tools with a strong design
-          aesthetic, I rapidly translate ideas into fluid, highly polished
-          digital experiences while maintaining clean and scalable architecture.
+          Through internships in <strong>Data Analytics</strong> and <strong>Data Science</strong>,
+          I've worked with real-world datasets — performing EDA, building dashboards, and
+          implementing ML models. Based in Hyderabad, India. Open to full-time roles,
+          freelance work, and collaborations.
         </p>
-        <a
-          href="https://durgavaraprasad.hashnode.dev/"
-          target="_blank"
-          rel="noopener noreferrer"
-          className="group relative inline-flex items-center gap-3 px-6 py-3 border-2 border-black bg-white text-black text-xs font-bold tracking-[0.2em] uppercase transition-all duration-300 shadow-[6px_6px_0px_0px_rgba(0,0,0,1)] hover:shadow-none hover:translate-x-[2px] hover:translate-y-[2px] hover:bg-black hover:text-white rounded-xl"
-        >
-          <BookOpen className="w-4 h-4" />
-          <span>Read My Technical Blog</span>
-        </a>
       </div>
     </div>
   </SectionBlock>
