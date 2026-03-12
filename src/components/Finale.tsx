@@ -1,3 +1,4 @@
+import { useState } from 'react';
 import {
   Github,
   Linkedin,
@@ -11,8 +12,20 @@ const DiscordIcon = ({ className }: { className?: string }) => (
   </svg>
 );
 
+const pulseMessages = [
+  'Available for Freelance Projects',
+  'Open to Full-Time Roles',
+  'Ready to Collaborate',
+  'Accepting New Projects',
+  'Open to Opportunities',
+  'Let\'s Build Together',
+];
+
 const Finale = () => {
   const currentYear = new Date().getFullYear();
+  const [pulseMessage] = useState(
+    () => pulseMessages[Math.floor(Math.random() * pulseMessages.length)]
+  );
 
   const socialLinks = [
     { icon: Github, href: 'https://github.com/ppavankumar19', label: 'GitHub' },
@@ -96,7 +109,7 @@ const Finale = () => {
           <div className="flex items-center gap-2 px-4 py-2 bg-green-100 border-2 border-green-600 rounded-full">
             <span className="w-2 h-2 bg-green-600 rounded-full animate-pulse" />
             <span className="text-[10px] font-black uppercase tracking-widest text-green-800">
-              Available for Freelance Projects
+              {pulseMessage}
             </span>
           </div>
           <p className="text-xs font-mono text-black/70 uppercase tracking-widest leading-loose max-w-sm">
