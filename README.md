@@ -1,6 +1,5 @@
 
-
- # 🚀 Durga Vara Prasad's Portfolio
+# 🚀 Pavan Kumar Ponnuri's Portfolio
 
 **A High-Performance Digital Identity built with the Modern Web Stack**
 
@@ -10,17 +9,15 @@
 [![TailwindCSS](https://img.shields.io/badge/Tailwind_CSS-38B2AC?style=for-the-badge&logo=tailwind-css&logoColor=white)](https://tailwindcss.com/)
 [![ShadcnUI](https://img.shields.io/badge/Shadcn_UI-000000?style=for-the-badge&logo=shadcnui&logoColor=white)](https://ui.shadcn.com/)
 
-[**Live Demo**](https://vara-s-portfolio.vercel.app/) • [**Report Bug**](https://github.com/VARA4u-tech/Vara-s--Portfolio/issues) • [**Request Feature**](https://github.com/VARA4u-tech/Vara-s--Portfolio/issues)
-
-</div>
+[**GitHub**](https://github.com/ppavankumar19) • [**LinkedIn**](https://linkedin.com/in/pavankumar19) • [**Email**](mailto:pavankumar.prrp@gmail.com)
 
 ---
 
 ## 📖 Overview
 
-Welcome to my portfolio! This project is more than just a resume; it's a showcase of my technical journey, featuring a **Neo-Brutalist design** aesthetic merged with high-tech interactive elements like a **Matrix-style rain effect** and a **functional Terminal shell**.
+Welcome to my portfolio! This project is more than just a resume; it's a showcase of my technical journey as an **AI-Native Software Engineer**, featuring a **Neo-Brutalist design** aesthetic merged with high-tech interactive elements like a **Matrix-style rain effect** and a **functional Terminal shell**.
 
-> "Building the future of the web, one pixel at a time." — **Vara**
+> "Building backend systems and AI-native products that ship." — **Pavan Kumar Ponnuri**
 
 ---
 
@@ -30,9 +27,9 @@ Welcome to my portfolio! This project is more than just a resume; it's a showcas
 - **🖥️ Interactive Terminal**: A custom terminal emulator to explore my profile via CLI commands.
 - **🌧️ Matrix Rain Background**: A dynamic, high-performance canvas animation in the Hero section.
 - **🎨 Neo-Brutalist Aesthetic**: Bold borders, paper textures, and high-contrast monochromatic styling.
-- **📅 GitHub Integration**: Real-time contribution graph visualization.
+- **📅 GitHub Integration**: Real-time contribution graph visualization (`ppavankumar19`).
 - **📱 Responsive by Design**: Seamless experience across mobile, tablet, and desktop.
-- **💬 Direct WhatsApp Contact**: Integrated form for instant communication.
+- **📧 EmailJS Contact Form**: Integrated contact form with direct email delivery via EmailJS.
 
 ---
 
@@ -58,19 +55,7 @@ Welcome to my portfolio! This project is more than just a resume; it's a showcas
 - **Forms**: React Hook Form
 - **Validation**: Zod
 - **GitHub Data**: `react-github-calendar`
-
----
-
-## 🖨️ Screenshots
-
-|                               Hero Section                                |                                Skills & Stats                                 |
-| :-----------------------------------------------------------------------: | :---------------------------------------------------------------------------: |
-| <img width="1887" height="892" alt="image" src="https://github.com/user-attachments/assets/2b52ca06-3fe3-4d11-a248-d9075099549e" />| <img width="1880" height="884" alt="image" src="https://github.com/user-attachments/assets/50d6f0d4-73e6-43f4-b335-e7f22cd57154" />
-
-
-|                                Terminal Interface                                 |                                 Projects Showcase                                 |
-| :-------------------------------------------------------------------------------: | :-------------------------------------------------------------------------------: |
-| <img width="1888" height="896" alt="image" src="https://github.com/user-attachments/assets/a4e685c3-5f7b-4f7e-97ae-741c7ae8ac34" />|<img width="1873" height="884" alt="image" src="https://github.com/user-attachments/assets/c08cebbf-8104-415a-a761-90c289aac3d5" />
+- **Email**: EmailJS (`@emailjs/browser`)
 
 ---
 
@@ -87,10 +72,10 @@ Follow these steps to set up the project locally:
 
 ```bash
 # Clone the repository
-git clone https://github.com/VARA4u-tech/Vara-s--Portfolio.git
+git clone https://github.com/ppavankumar19/My-Portfolio-19.git
 
 # Navigate to the project directory
-cd Vara-s--Portfolio
+cd My-Portfolio-19
 
 # Install dependencies
 npm install
@@ -103,7 +88,7 @@ npm install
 npm run dev
 ```
 
-Open [http://localhost:5173](http://localhost:5173) in your browser.
+Open [http://localhost:8978](http://localhost:8978) in your browser.
 
 ### **4. Build for Production**
 
@@ -131,16 +116,14 @@ src/
 
 If you have any questions or want to collaborate, feel free to reach out!
 
-- **LinkedIn**: [@vara4u](https://www.linkedin.com/in/durga-vara-prasad-pappuri-1797701b6/)
-- **Instagram**: [@d_v_p6](https://www.instagram.com/d_v_p6/)
-- **Blog**: [Hashnode](https://durgavaraprasad.hashnode.dev/)
-- **Email**: [pappuridurgavaraprasad4pl@gmail.com](mailto:pappuridurgavaraprasad4pl@gmail.com)
-- **WhatsApp**: [+91 9550533315](https://wa.me/919550533315)
+- **LinkedIn**: [linkedin.com/in/pavankumar19](https://linkedin.com/in/pavankumar19)
+- **GitHub**: [github.com/ppavankumar19](https://github.com/ppavankumar19)
+- **Email**: [pavankumar.prrp@gmail.com](mailto:pavankumar.prrp@gmail.com)
+- **Location**: Hyderabad, Telangana, India
 
 ---
 <div align="center">
-  <h2 style="font-size:28px; animation: glow 2s ease-in-out infinite alternate;">
-    Built with 🤍🖤 and powered by coffee-driven development by Durga Vara Prasad.
+  <h2>
+    Built with 🤍🖤 by Pavan Kumar Ponnuri — AI-Native Software Engineer & GenAI Builder.
   </h2>
 </div>
-
