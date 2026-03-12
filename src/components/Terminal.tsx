@@ -31,7 +31,7 @@ const Terminal = () => {
       type: 'response',
       content: (
         <div className="mb-2">
-          <p>Welcome to Vara's Portfolio Terminal v1.0.0</p>
+          <p>Welcome to Pavan's Portfolio Terminal v1.0.0</p>
           <p>
             I am a conversational AI. Type{' '}
             <span className="text-green-400">help</span> for commands, or just
@@ -115,23 +115,23 @@ const Terminal = () => {
           </div>
         );
       case 'cat readme.md':
-        return "Vara's Portfolio v1.0.0. Built with React, TypeScript, and a reckless amount of neobrutalism.";
+        return "Pavan's Portfolio v1.0.0. Built with React, TypeScript, and a reckless amount of neobrutalism.";
       case 'cat experience.txt':
-        return 'Freelance Developer @ AOTMS. Built scalable transport systems and loved every second of it.';
+        return 'Data Analytics Intern @ GrrowUp (Jun–Aug 2024). Full analytics workflow: EDA, dashboards, SQL, web scraping.';
       case 'cat education.txt':
-        return 'Currently exploring the depths of CSE, specializing in Blockchain and AI.';
+        return 'B.Tech CSE, GITAM University (2021–2025), CGPA: 8.03. Based in Hyderabad, India.';
       case 'cat roadmap.sh':
-        return 'Next up: Master Aptos Move, scale AI Voice Editor, and keep vibe coding.';
+        return 'Next up: Ship CLI Academy, expand Atlas AI planner, land a backend/AI engineering role.';
       case 'about':
-        return "I'm Pappuri Durga Vara Prasad, a passionate developer specializing in Flutter, React, and Blockchain technologies. I building modern, high-performance applications.";
+        return "I'm Pavan Kumar Ponnuri, an AI-Native Software Engineer specialising in backend architecture, full-stack development, and Generative AI integrations. Building systems that ship.";
       case 'skills':
         return (
           <div>
             <p className="mb-1 text-yellow-400">CORE STACK:</p>
-            <p>• Flutter / Dart</p>
-            <p>• React / TypeScript</p>
-            <p>• Firebase / Node.js</p>
-            <p>• Blockchain (Aptos/Move)</p>
+            <p>• Python / TypeScript / Node.js</p>
+            <p>• Flask / Express / React</p>
+            <p>• PostgreSQL / MongoDB / Supabase</p>
+            <p>• LLM Integrations / LangChain / Groq</p>
           </div>
         );
       case 'projects':
@@ -139,13 +139,13 @@ const Terminal = () => {
           <div className="flex flex-col gap-1">
             <p className="mb-1 text-purple-400">RECENT WORK:</p>
             <a href="#projects" className="text-blue-400 hover:underline">
-              1. AI Voice Editor (LATEST)
+              1. Atlas — AI Travel Planner (LATEST)
             </a>
             <a href="#projects" className="text-blue-400 hover:underline">
-              2. SafeTrip Pro (Safety App)
+              2. ChemSus Technologies (E-Commerce)
             </a>
             <a href="#projects" className="text-blue-400 hover:underline">
-              3. AOTMS (Freelance)
+              3. VocabHub (Full Stack)
             </a>
           </div>
         );
@@ -156,32 +156,32 @@ const Terminal = () => {
             <p>
               Email:{' '}
               <a
-                href="mailto:pappuridurgavaraprasad4pl@gmail.com"
+                href="mailto:pavankumar.prrp@gmail.com"
                 className="text-white hover:underline"
               >
-                pappuridurgavaraprasad4pl@gmail.com
+                pavankumar.prrp@gmail.com
               </a>
             </p>
             <p>
               LinkedIn:{' '}
               <a
-                href="https://www.linkedin.com/in/durga-vara-prasad-pappuri-1797701b6/"
+                href="https://linkedin.com/in/pavankumar19"
                 target="_blank"
                 rel="noopener noreferrer"
                 className="text-white hover:underline"
               >
-                LinkedIn Profile
+                linkedin.com/in/pavankumar19
               </a>
             </p>
             <p>
               GitHub:{' '}
               <a
-                href="https://github.com/VARA4u-tech"
+                href="https://github.com/ppavankumar19"
                 target="_blank"
                 rel="noopener noreferrer"
                 className="text-white hover:underline"
               >
-                github.com/VARA4u-tech
+                github.com/ppavankumar19
               </a>
             </p>
           </div>
@@ -196,7 +196,7 @@ const Terminal = () => {
 
     // Greeting
     if (lower.match(/^(hi|hello|hey|greetings)/)) {
-      return "Hello! I'm Vara's virtual assistant. How can I help you today?";
+      return "Hello! I'm Pavan's virtual assistant. How can I help you today?";
     }
 
     // About
@@ -380,7 +380,7 @@ const Terminal = () => {
             />
             <div className="w-3 h-3 rounded-full bg-green-500 hover:bg-green-600 cursor-pointer" />
             <span className="ml-2 text-white/60 text-xs">
-              guest@vara-portfolio:~
+              guest@pavan-portfolio:~
             </span>
           </div>
           <div className="flex items-center gap-3 text-white/40">
