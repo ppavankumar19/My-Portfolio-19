@@ -13,6 +13,7 @@ const projects = [
     tags: ['Python', 'FastAPI', 'Groq', 'Sarvam.ai', 'ChromaDB', 'PostgreSQL'],
     githubUrl: 'https://github.com/ppavankumar19/VaakAI',
     liveUrl: 'https://github.com/ppavankumar19/VaakAI',
+    comingSoon: true,
   },
   {
     title: 'Atlas — AI Travel Planner',
@@ -97,16 +98,23 @@ const ProjectsSection = () => (
               <Github className="w-3.5 h-3.5" />
               Source
             </a>
-            <a
-              href={project.liveUrl}
-              target="_blank"
-              rel="noopener noreferrer"
-              onClick={playClick}
-              className="flex items-center justify-center gap-2 px-4 py-2 border-2 border-black bg-white text-[10px] font-black uppercase tracking-wider transition-all duration-300 shadow-[4px_4px_0px_0px_rgba(0,0,0,1)] hover:shadow-none hover:translate-x-[2px] hover:translate-y-[2px] hover:bg-black hover:text-white rounded-xl"
-            >
-              <ExternalLink className="w-3.5 h-3.5" />
-              Live Demo
-            </a>
+            {'comingSoon' in project && project.comingSoon ? (
+              <span className="flex items-center justify-center gap-2 px-4 py-2 border-2 border-dashed border-black/40 bg-white text-[10px] font-black uppercase tracking-wider text-black/40 cursor-not-allowed rounded-xl">
+                <ExternalLink className="w-3.5 h-3.5" />
+                Coming Soon
+              </span>
+            ) : (
+              <a
+                href={project.liveUrl}
+                target="_blank"
+                rel="noopener noreferrer"
+                onClick={playClick}
+                className="flex items-center justify-center gap-2 px-4 py-2 border-2 border-black bg-white text-[10px] font-black uppercase tracking-wider transition-all duration-300 shadow-[4px_4px_0px_0px_rgba(0,0,0,1)] hover:shadow-none hover:translate-x-[2px] hover:translate-y-[2px] hover:bg-black hover:text-white rounded-xl"
+              >
+                <ExternalLink className="w-3.5 h-3.5" />
+                Live Demo
+              </a>
+            )}
           </div>
         </div>
       ))}
