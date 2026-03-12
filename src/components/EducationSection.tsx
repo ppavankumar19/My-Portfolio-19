@@ -2,16 +2,19 @@ import SectionBlock from './SectionBlock';
 
 const education = [
   {
-    degree:
-      'Master of Computer Applications (MCA), DVR & Dr. HS MIC College of Technology (Autonomous),Kanchikacherla',
-    school: 'Jawaharlal Nehru Technological University Kakinada',
-    year: '2024 – 2026(Pursuing)',
+    degree: 'B.Tech — Computer Science & Engineering, GITAM Deemed To Be University',
+    school: 'Visakhapatnam, India',
+    year: '2021 – 2025 · CGPA: 8.03 / 10',
   },
   {
-    degree:
-      'Bachelor of Science (B.Sc-MSCs), Gowtham Degree College,Vijayawada',
-    school: 'Krishna University',
-    year: '2021 – 2024',
+    degree: 'Intermediate (BIEAP), Ascent Junior College',
+    school: 'Visakhapatnam',
+    year: '2019 – 2021 · 77.1%',
+  },
+  {
+    degree: 'Secondary Education (BSEAP), Bhashyam High School',
+    school: 'Visakhapatnam',
+    year: '2018 – 2019 · CGPA: 9.3 / 10',
   },
 ];
 
