@@ -10,6 +10,7 @@ import {
   Linkedin,
   Send,
   Loader2,
+  MapPin,
 } from 'lucide-react';
 
 const EMAILJS_SERVICE_ID = 'service_0147';
@@ -101,6 +102,19 @@ const ContactSection = () => {
                   Response Time
                 </p>
                 <p className="font-mono text-sm">Within 24 hours</p>
+              </div>
+            </div>
+
+            <div className="flex items-center gap-4 p-4 border border-foreground/10 bg-white/50 hover:border-black transition-colors duration-300 rounded-xl">
+              <div className="p-3 bg-black text-white self-start rounded-lg">
+                <MapPin className="w-5 h-5" />
+              </div>
+              <div>
+                <p className="text-xs uppercase tracking-widest text-foreground/50 mb-1">
+                  Location
+                </p>
+                <p className="font-mono text-sm">Visakhapatnam, Andhra Pradesh</p>
+                <p className="font-mono text-xs text-foreground/50 mt-0.5">India · IST (UTC +5:30)</p>
               </div>
             </div>
           </div>

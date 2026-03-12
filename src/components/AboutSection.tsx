@@ -9,7 +9,7 @@ const AboutSection = () => (
         <p className="body-text max-w-2xl">
           I'm an <strong>AI-Native Software Engineer</strong> building backend-heavy systems,
           full-stack platforms, and GenAI-powered products. B.Tech CSE graduate from
-          GITAM University (2025) with an 8.03 CGPA.
+          GITAM University (2025).
         </p>
         <p className="body-text max-w-2xl mt-6">
           I specialise in <strong>backend architecture</strong>, <strong>full-stack development</strong>,
