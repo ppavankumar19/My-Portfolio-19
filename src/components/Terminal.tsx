@@ -119,11 +119,11 @@ const Terminal = () => {
       case 'cat experience.txt':
         return 'Data Analytics Intern @ GrrowUp (Jun–Aug 2024). Full analytics workflow: EDA, dashboards, SQL, web scraping.';
       case 'cat education.txt':
-        return 'B.Tech CSE, GITAM University (2021–2025), CGPA: 8.03. Based in Hyderabad, India.';
+        return 'B.Tech CSE, GITAM University (2021–2025), CGPA: 8.03. Based in Visakhapatnam, India.';
       case 'cat roadmap.sh':
         return 'Next up: Ship CLI Academy, expand Atlas AI planner, land a backend/AI engineering role.';
       case 'about':
-        return "I'm Pavan Kumar Ponnuri, an AI-Native Software Engineer specialising in backend architecture, full-stack development, and Generative AI integrations. Building systems that ship.";
+        return "I'm Pavan Kumar Ponnuri, an AI Native Software Developer specialising in backend architecture, full-stack development, and Generative AI integrations. Building systems that ship.";
       case 'skills':
         return (
           <div>

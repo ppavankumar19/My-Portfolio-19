@@ -7,7 +7,7 @@ const AboutSection = () => (
       <AnimatedAvatar />
       <div className="flex-1">
         <p className="body-text max-w-2xl">
-          I'm an <strong>AI-Native Software Engineer</strong> building backend-heavy systems,
+          I'm an <strong>AI Native Software Developer</strong> building backend-heavy systems,
           full-stack platforms, and GenAI-powered products. B.Tech CSE graduate from
           GITAM University (2025).
         </p>
@@ -19,7 +19,7 @@ const AboutSection = () => (
         <p className="body-text max-w-2xl mt-6 mb-8">
           Through internships in <strong>Data Analytics</strong> and <strong>Data Science</strong>,
           I've worked with real-world datasets — performing EDA, building dashboards, and
-          implementing ML models. Based in Hyderabad, India. Open to full-time roles,
+          implementing ML models. Based in Visakhapatnam, India. Open to full-time roles,
           freelance work, and collaborations.
         </p>
       </div>

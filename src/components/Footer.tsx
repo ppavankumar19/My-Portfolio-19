@@ -51,8 +51,8 @@ const Footer = () => {
               PAVAN KUMAR PONNURI<span className="text-foreground">.....</span>
             </h2>
             <p className="text-foreground/60 max-w-sm leading-relaxed">
-              AI-Native Software Engineer building backend systems and GenAI
-              products. Based in Hyderabad, India. Open to full-time roles
+              AI Native Software Developer building backend systems and GenAI
+              products. Based in Visakhapatnam, India. Open to full-time roles
               and freelance work.
             </p>
             <div className="flex gap-4">
