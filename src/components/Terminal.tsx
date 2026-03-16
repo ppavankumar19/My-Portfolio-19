@@ -119,7 +119,7 @@ const Terminal = () => {
       case 'cat experience.txt':
         return 'Data Analytics Intern @ GrrowUp (Jun–Aug 2024). Full analytics workflow: EDA, dashboards, SQL, web scraping.';
       case 'cat education.txt':
-        return 'B.Tech CSE, GITAM University (2021–2025), CGPA: 8.03. Based in Visakhapatnam, Andhra Pradesh.';
+        return 'B.Tech CSE, GITAM University (2021–2025), CGPA: 8.03. Based in Visakhapatnam, Andhra Pradesh, India.';
       case 'cat roadmap.sh':
         return 'Next up: Ship CLI Academy, expand Atlas AI planner, land a backend/AI engineering role.';
       case 'about':
