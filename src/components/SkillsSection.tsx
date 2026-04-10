@@ -53,6 +53,7 @@ const skillCategories = [
       'Linux',
       'Git',
       'GitHub Actions',
+      'Render',
     ],
   },
   {
@@ -61,7 +62,9 @@ const skillCategories = [
     color: 'bg-purple-50',
     skills: [
       'LLM Integrations',
+      'Multi-Agent AI',
       'Groq',
+      'Cerebras',
       'OpenAI',
       'LangChain',
       'Agent Frameworks',
@@ -77,6 +80,7 @@ const skillCategories = [
     color: 'bg-gray-50',
     skills: [
       'Vercel',
+      'Playwright',
       'Postman',
       'Power BI',
       'Google Colab',
