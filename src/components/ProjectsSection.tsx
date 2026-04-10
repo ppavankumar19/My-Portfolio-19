@@ -6,29 +6,27 @@ import { playHover, playClick } from '@/hooks/useSoundEffects';
 
 const projects = [
   {
-    title: 'VaakAI — Communication Analyzer',
-    isCurrent: true,
+    title: 'NEXUS — Network Intelligence Tool',
     description:
-      'AI-powered web app that analyzes video recordings of interviews, presentations, and demos to improve spoken communication. Features verbatim transcripts with Indian language support, filler word detection, vocabulary scoring, radar charts, and RAG-based Q&A on sessions.',
-    tags: ['Python', 'FastAPI', 'Groq', 'Sarvam.ai', 'ChromaDB', 'PostgreSQL'],
-    githubUrl: 'https://github.com/ppavankumar19/VaakAI',
-    liveUrl: 'https://github.com/ppavankumar19/VaakAI',
-    comingSoon: true,
+      'Full-stack OSINT tool for deep reconnaissance of IP addresses and domains. Runs 12 parallel intelligence modules — DNS analysis, geolocation, TCP port scanning, SSL/TLS extraction, HTTP fingerprinting, WHOIS lookup, subdomain enumeration, blacklist reputation checks, latency measurements, and security header analysis — delivered through an animated cyber interface with dual themes.',
+    tags: ['Node.js', 'Express', 'Vanilla JS', 'DNS', 'OSINT', 'Security', 'Rate Limiting'],
+    githubUrl: 'https://github.com/ppavankumar19/Nexus-Tool',
+    liveUrl: 'https://nexus-tool.19062002.xyz',
   },
   {
     title: 'Atlas — AI Travel Planner',
     isNew: true,
     description:
-      'Full-stack AI travel planner powered by Groq Llama 3.3 70B. Generates day-by-day itineraries with live Airbnb listings, interactive Leaflet.js maps, 150+ currency conversion, and PDF/calendar export.',
-    tags: ['Python', 'Flask', 'Groq', 'Agno', 'Leaflet.js', 'Vercel'],
+      'Full-stack AI travel planner powered by Groq Llama 3.3 70B. Generates day-by-day itineraries with live Airbnb listings via MCP server integration, interactive Leaflet.js maps, 150+ currency conversion, accessibility filters (wheelchair, elevator, limited-walking), and PDF/calendar export.',
+    tags: ['Python', 'Flask', 'Groq', 'Agno', 'MCP', 'Leaflet.js', 'Vercel'],
     githubUrl: 'https://github.com/ppavankumar19/atlas-travel-planner',
     liveUrl: 'https://atlas.19062002.xyz',
   },
   {
     title: 'LinuxDojo — Linux Learning Platform',
     description:
-      'Interactive web platform to master Linux/Ubuntu commands through structured exercises and progress tracking. Features terminal demo videos via Asciinema, GitHub OAuth, admin dashboard, and mobile-first responsive design.',
-    tags: ['Node.js', 'Express', 'Supabase', 'HTML', 'CSS', 'JavaScript'],
+      'Interactive web platform to master Linux/Ubuntu commands through command search and filtering, step-by-step guided practice, and progress tracking. Features Asciinema terminal demos, video explanations, GitHub OAuth via Supabase Auth, admin dashboard with live preview, and database-level Row Level Security (RLS) policies.',
+    tags: ['Node.js', 'Express', 'Supabase', 'GitHub OAuth', 'HTML', 'JavaScript', 'Render'],
     githubUrl: 'https://github.com/ppavankumar19/Linuxdojo',
     liveUrl: 'https://github.com/ppavankumar19/Linuxdojo',
   },
