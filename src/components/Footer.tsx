@@ -12,7 +12,7 @@ const DiscordIcon = ({ className }: { className?: string }) => (
 );
 
 const Footer = () => {
-  const currentYear = new Date().getFullYear();
+  const currentYear = 2025;
 
   const scrollToTop = () => {
     window.scrollTo({ top: 0, behavior: 'smooth' });
