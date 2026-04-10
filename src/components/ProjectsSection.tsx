@@ -28,7 +28,7 @@ const projects = [
       'Interactive web platform to master Linux/Ubuntu commands through command search and filtering, step-by-step guided practice, and progress tracking. Features Asciinema terminal demos, video explanations, GitHub OAuth via Supabase Auth, admin dashboard with live preview, and database-level Row Level Security (RLS) policies.',
     tags: ['Node.js', 'Express', 'Supabase', 'GitHub OAuth', 'HTML', 'JavaScript', 'Render'],
     githubUrl: 'https://github.com/ppavankumar19/Linuxdojo',
-    liveUrl: 'https://github.com/ppavankumar19/Linuxdojo',
+    liveUrl: 'https://linuxdojo.onrender.com/',
   },
   {
     title: 'High-Demand Crops Analysis',
