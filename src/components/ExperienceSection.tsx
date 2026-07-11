@@ -11,13 +11,13 @@ const experiences = [
     tags: ['Python', 'Multi-Agent AI', 'LLM Integration', 'Playwright', 'Telegram Bot', 'APScheduler', 'Cerebras', 'Groq', 'NVIDIA NIM', 'Async Python'],
   },
   {
-    role: 'Data Analytics Intern',
-    company: 'GrrowUp',
-    period: 'Jun 2024 – Aug 2024 · Remote · 8 Weeks',
+    role: 'AI-Native Intern',
+    company: 'AI Karyashala — Research & Development',
+    period: 'Apr 2026 – Jul 2026 · Visakhapatnam, India',
     isCurrent: false,
     description:
-      'Intensive 8-week Data Analytics internship gaining hands-on exposure to the full analytics workflow — from raw data ingestion to storytelling dashboards presented to stakeholders. Performed end-to-end EDA on real-world datasets, built data cleaning pipelines, created interactive dashboards in Tableau and Google Sheets, wrote complex SQL queries, and developed web scraping scripts. Capstone: data storytelling from raw CSV to executive summary.',
-    tags: [],
+      'Learned the internal workings of Large Language Models (LLMs), experimented with various open-source and local models, and built full-stack AI-native applications. Built and tested AI agents locally using open-source agentic frameworks, gaining hands-on experience in prompt engineering, MCP, RAG, debugging, and version control while collaborating with mentors on real-world engineering practices.',
+    tags: ['LLMs', 'AI Agents', 'Prompt Engineering', 'MCP', 'RAG', 'Python', 'Version Control'],
   },
 ];
 
