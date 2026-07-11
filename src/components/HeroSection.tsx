@@ -33,7 +33,7 @@ const calcExperience = () => {
   return years > 0 ? `${years}+ year${years > 1 ? 's' : ''}` : `${months}+ months`;
 };
 
-const PROJECTS_TARGET = 15;
+const PROJECTS_TARGET = 10;
 
 const HeroSection = () => {
   const [roleIndex, setRoleIndex] = useState(0);
@@ -279,7 +279,7 @@ const HeroSection = () => {
       {/* Bottom-right stats */}
       <div className="absolute bottom-10 right-6 md:right-10 z-10 hidden md:block">
         <div className="font-mono text-xs text-foreground text-right leading-relaxed font-medium">
-          <p>const experience = "{animExpNum}{calcExperience().slice(calcExperience().indexOf('+'))}";</p>
+          <p>const experience = "6+ months";</p>
           <p>const projects = {animProjects}+;</p>
           <p>const passion = Infinity;</p>
         </div>
