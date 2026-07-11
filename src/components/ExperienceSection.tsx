@@ -16,8 +16,8 @@ const experiences = [
     period: 'Aug 2025 – Jan 2026 · Visakhapatnam, India',
     isCurrent: false,
     description:
-      'Completed a 6-month intensive training programme under Rohini Kumar Barla. Built execution-aware engineering skills across systems programming in C (compilation pipeline, LLDB debugging, call stacks, memory segments), Python internals (bytecode, PDB step-debugging), networking and HTTP fundamentals, SSH tunnelling and port forwarding, Linux shell scripting, SQLite/MySQL, DOM manipulation, cryptography basics, and GenAI-assisted learning workflows. Developed the ability to reason across code, OS, and network layers from first principles.',
-    tags: ['C', 'Python', 'Linux', 'SQL', 'Networking', 'SSH', 'Git', 'LLDB', 'PDB', 'LLMs'],
+      'Completed a 6-month intensive training programme under Rohini Kumar Barla. Covered systems programming in C (compilation pipeline, LLDB debugging, call stacks, memory segments), Python internals (bytecode, PDB step-debugging), frontend development with HTML, CSS, and JavaScript, backend development with Flask and FastAPI, databases (SQLite3, MySQL, PL/SQL), networking and HTTP fundamentals, SSH tunnelling and port forwarding, Linux shell scripting, DOM manipulation, cryptography basics, and GenAI-assisted learning workflows. Developed the ability to reason across code, OS, and network layers from first principles.',
+    tags: ['C', 'Python', 'HTML', 'CSS', 'JavaScript', 'Flask', 'FastAPI', 'SQLite3', 'MySQL', 'PL/SQL', 'Linux', 'Networking', 'SSH', 'Git', 'LLDB', 'PDB'],
   },
 ];
 
