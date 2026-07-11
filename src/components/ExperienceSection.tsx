@@ -7,8 +7,8 @@ const experiences = [
     period: 'Feb 2026 – Jul 2026 · Visakhapatnam, India',
     isCurrent: false,
     description:
-      'Explored agentic development using frameworks including n8n, Hermes Agent, and OpenClaw. Built OpenClaw — a multi-agent social media automation system with platform-specific agents (Instagram, Twitter/X, LinkedIn, YouTube, Email), Telegram-based input, a cascading LLM pipeline (Cerebras Qwen-3 235B → Groq LLaMA 70B → NVIDIA NIM), Playwright-based publishing with live preview, and a human-in-the-loop approval flow. Gained hands-on experience with open-source and local LLMs, prompt engineering, MCP, RAG, and version control through real-world engineering practice under mentor guidance.',
-    tags: ['Python', 'Multi-Agent AI', 'n8n', 'Playwright', 'Telegram Bot', 'Cerebras', 'Groq', 'NVIDIA NIM', 'MCP', 'RAG', 'Prompt Engineering'],
+      'Learned the internal working mechanisms of LLMs and explored open-source models via Ollama and Hugging Face. Built full-stack applications and static pages, and explored RAG and MCP integrations hands-on. Dived into agentic development using frameworks including n8n, Hermes Agent, and OpenClaw — building OpenClaw, a multi-agent social media automation system with platform-specific agents (Instagram, Twitter/X, LinkedIn, YouTube, Email), Telegram-based input, a cascading LLM pipeline (Cerebras Qwen-3 235B → Groq LLaMA 70B → NVIDIA NIM), Playwright-based publishing with live preview, and a human-in-the-loop approval flow.',
+    tags: ['Python', 'LLMs', 'Ollama', 'Hugging Face', 'Multi-Agent AI', 'n8n', 'Playwright', 'Telegram Bot', 'Cerebras', 'Groq', 'NVIDIA NIM', 'MCP', 'RAG', 'Prompt Engineering'],
   },
   {
     role: 'AI Native Development Trainee',
