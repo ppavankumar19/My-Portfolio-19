@@ -13,11 +13,20 @@ const experiences = [
   {
     role: 'AI-Native Intern',
     company: 'AI Karyashala — Research & Development',
-    period: 'Apr 2026 – Jul 2026 · Visakhapatnam, India',
+    period: 'Feb 2026 – Jul 2026 · Visakhapatnam, India',
     isCurrent: false,
     description:
       'Learned the internal workings of Large Language Models (LLMs), experimented with various open-source and local models, and built full-stack AI-native applications. Built and tested AI agents locally using open-source agentic frameworks, gaining hands-on experience in prompt engineering, MCP, RAG, debugging, and version control while collaborating with mentors on real-world engineering practices.',
     tags: ['LLMs', 'AI Agents', 'Prompt Engineering', 'MCP', 'RAG', 'Python', 'Version Control'],
+  },
+  {
+    role: 'Systems & AI Trainee',
+    company: 'AI Karyashala — Rohini Kumar Barla',
+    period: 'Aug 2025 – Jan 2026 · Visakhapatnam, India',
+    isCurrent: false,
+    description:
+      'Completed a 6-month intensive training programme under Rohini Kumar Barla. Built execution-aware engineering skills across systems programming in C (compilation pipeline, LLDB debugging, call stacks, memory segments), Python internals (bytecode, PDB step-debugging), networking and HTTP fundamentals, SSH tunnelling and port forwarding, Linux shell scripting, SQLite/MySQL, DOM manipulation, cryptography basics, and GenAI-assisted learning workflows. Developed the ability to reason across code, OS, and network layers from first principles.',
+    tags: ['C', 'Python', 'Linux', 'SQL', 'Networking', 'SSH', 'Git', 'LLDB', 'PDB', 'LLMs'],
   },
 ];
 
