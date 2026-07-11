@@ -31,13 +31,12 @@ const projects = [
     liveUrl: 'https://linuxdojo.onrender.com/',
   },
   {
-    title: 'High-Demand Crops Analysis',
-    isFinalYear: true,
+    title: 'ChemSus Technologies',
     description:
-      'Identifies high-demand crops where India lags globally and visualises data to highlight agricultural growth and investment opportunities. Focused on EDA and data storytelling.',
-    tags: ['Python', 'Pandas', 'Power BI', 'Google Colab'],
-    githubUrl: 'https://github.com/ppavankumar19/high-demand-crops',
-    liveUrl: 'https://github.com/ppavankumar19/high-demand-crops',
+      'Production e-commerce platform with Supabase Auth (email + Google OAuth), UPI payments, OTP checkout, item-level order tracking, in-order messaging, and a full admin dashboard.',
+    tags: ['Node.js', 'Express', 'PostgreSQL', 'Supabase', 'Vanilla JS'],
+    githubUrl: 'https://github.com/ppavankumar19/ChemSus-Technologies-Pvt-LTD',
+    liveUrl: 'https://chemsus.in',
   },
 ];
 
