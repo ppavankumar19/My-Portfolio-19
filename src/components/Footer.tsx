@@ -52,8 +52,7 @@ const Footer = () => {
             </h2>
             <p className="text-foreground/60 max-w-sm leading-relaxed">
               AI Native Software Developer building backend systems and GenAI
-              products. Based in Visakhapatnam, Andhra Pradesh, India. Open to full-time roles
-              and freelance work.
+              products. Based in Visakhapatnam, Andhra Pradesh, India. Open to full-time roles.
             </p>
             <div className="flex gap-4">
               {socialLinks.map((link) => (

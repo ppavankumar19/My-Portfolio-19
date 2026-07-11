@@ -13,10 +13,8 @@ const DiscordIcon = ({ className }: { className?: string }) => (
 );
 
 const pulseMessages = [
-  'Available for Freelance Projects',
   'Open to Full-Time Roles',
   'Ready to Collaborate',
-  'Accepting New Projects',
   'Open to Opportunities',
   'Let\'s Build Together',
 ];
@@ -50,7 +48,7 @@ const Finale = () => {
     'Pavan Kumar Ponnuri 🚀',
     'Backend Architect | Full Stack | GenAI | LLM Integrations',
     'Building backend systems & AI-native products that ship 🔖',
-    'Available for Full-Time Roles & Freelance',
+    'Available for Full-Time Roles',
   ];
 
   return (

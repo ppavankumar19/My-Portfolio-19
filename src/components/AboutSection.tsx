@@ -17,10 +17,10 @@ const AboutSection = () => (
           and e-commerce platforms to LLM-powered travel planners.
         </p>
         <p className="body-text max-w-2xl mt-6 mb-8">
-          Through internships in <strong>Data Analytics</strong> and <strong>Data Science</strong>,
-          I've worked with real-world datasets — performing EDA, building dashboards, and
-          implementing ML models. Based in Visakhapatnam, Andhra Pradesh, India. Open to full-time roles,
-          freelance work, and collaborations.
+          Through an internship at <strong>AI Karyashala R&amp;D</strong>, I gained hands-on
+          experience with LLMs, open-source agentic frameworks, prompt engineering, MCP, and RAG —
+          building and testing AI agents locally while collaborating with mentors on real-world
+          engineering practices. Based in Visakhapatnam, Andhra Pradesh, India. Open to full-time roles.
         </p>
       </div>
     </div>
