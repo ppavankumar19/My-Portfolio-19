@@ -16,8 +16,8 @@ const experiences = [
     period: 'Aug 2025 – Jan 2026 · Visakhapatnam, India',
     isCurrent: false,
     description:
-      'Completed a 6-month intensive training programme under Rohini Kumar Barla. Covered systems programming in C (compilation pipeline, LLDB debugging, call stacks, memory segments), Python internals (bytecode, PDB step-debugging), frontend development with HTML, CSS, and JavaScript, backend development with Flask and FastAPI, databases (SQLite3, MySQL, PL/SQL), networking and HTTP fundamentals, SSH tunnelling and port forwarding, Linux shell scripting, DOM manipulation, cryptography basics, and GenAI-assisted learning workflows. Developed the ability to reason across code, OS, and network layers from first principles.',
-    tags: ['C', 'Python', 'HTML', 'CSS', 'JavaScript', 'Flask', 'FastAPI', 'SQLite3', 'MySQL', 'PL/SQL', 'Linux', 'Networking', 'SSH', 'Git', 'LLDB', 'PDB'],
+      'Completed a 6-month intensive training programme under Rohini Kumar Barla spanning the full software stack. Studied system internals — C programming, compilation pipeline, LLDB debugging, call stacks, and memory layout (stack, heap, data, code segments). Explored Python internals including bytecode execution and PDB step-debugging. Built frontends with HTML, CSS, and JavaScript including live DOM manipulation, and backend services with Flask and FastAPI. Worked with databases across SQLite3, MySQL, and PL/SQL. Gained hands-on experience with Linux shell scripting, SSH tunnelling and port forwarding, virtual machines (Ubuntu), cloud machine setup, and application deployment. Also covered networking and HTTP fundamentals, cryptography basics, and GenAI-assisted learning workflows — developing the ability to reason across code, OS, and network layers from first principles.',
+    tags: ['C', 'Python', 'HTML', 'CSS', 'JavaScript', 'Flask', 'FastAPI', 'SQLite3', 'MySQL', 'PL/SQL', 'Linux', 'Ubuntu', 'SSH', 'Cloud', 'Deployment', 'Networking', 'Git', 'LLDB', 'PDB'],
   },
 ];
 
