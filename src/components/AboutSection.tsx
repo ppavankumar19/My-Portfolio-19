@@ -17,10 +17,11 @@ const AboutSection = () => (
           and e-commerce platforms to LLM-powered travel planners.
         </p>
         <p className="body-text max-w-2xl mt-6 mb-8">
-          Through an internship at <strong>AI Karyashala R&amp;D</strong>, I gained hands-on
-          experience with LLMs, open-source agentic frameworks, prompt engineering, MCP, and RAG —
-          building and testing AI agents locally while collaborating with mentors on real-world
-          engineering practices. Based in Visakhapatnam, Andhra Pradesh, India. Open to full-time roles.
+          At <strong>AI Karyashala</strong>, I completed 6 months of intensive systems training under
+          Rohini Kumar Barla — covering C, Python internals, networking, Linux, SQL, SSH, and
+          cryptography — followed by a 6-month AI-native internship building LLM-powered applications,
+          AI agents, and working with MCP, RAG, and agentic frameworks. Based in Visakhapatnam,
+          Andhra Pradesh, India. Open to full-time roles.
         </p>
       </div>
     </div>
