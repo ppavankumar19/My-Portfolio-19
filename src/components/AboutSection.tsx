@@ -17,10 +17,10 @@ const AboutSection = () => (
           REST APIs, agentic AI systems, and LLM-powered applications.
         </p>
         <p className="body-text max-w-2xl mt-6 mb-8">
-          At <strong>AI Karyashala</strong>, I completed 6 months of intensive systems training under
-          Rohini Kumar Barla — covering C, Python internals, networking, Linux, SQL, SSH, and
-          cryptography — followed by a 6-month AI-native internship building LLM-powered applications,
-          AI agents, and working with MCP, RAG, and agentic frameworks. Based in Visakhapatnam,
+          At <strong>AI Karyashala</strong>, I completed 6 months of <strong>AI Native Development</strong> training
+          under Rohini Kumar Barla — covering systems programming, full-stack development, databases,
+          networking, Linux, and GenAI — followed by a 6-month AI-native internship building LLM-powered
+          applications, AI agents, and working with MCP, RAG, and agentic frameworks. Based in Visakhapatnam,
           Andhra Pradesh, India. Open to full-time roles.
         </p>
       </div>
