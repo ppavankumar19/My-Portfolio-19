@@ -214,26 +214,6 @@ const HeroSection = () => {
           </span>
         </div>
 
-        {/* Tech tags */}
-        <div className="flex flex-wrap gap-2 justify-center mt-8 max-w-md mx-auto">
-          {[
-            'Python',
-            'Node.js',
-            'TypeScript',
-            'React',
-            'GenAI',
-            'LangChain',
-          ].map((tech) => (
-            <span
-              key={tech}
-              className="px-3 py-1 font-mono text-xs border-2 border-foreground/40 text-foreground/80 font-medium tracking-wider hover:bg-foreground hover:text-background transition-all duration-300 cursor-default rounded-lg"
-              onMouseEnter={playHover}
-            >
-              {tech}
-            </span>
-          ))}
-        </div>
-
         {/* Social links */}
         <div className="flex gap-4 justify-center mt-10">
           {[
