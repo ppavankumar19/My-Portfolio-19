@@ -13,8 +13,8 @@ const AboutSection = () => (
         </p>
         <p className="body-text max-w-2xl mt-6">
           I specialise in <strong>backend architecture</strong>, <strong>full-stack development</strong>,
-          and <strong>Generative AI integrations</strong> — building everything from REST APIs
-          and e-commerce platforms to LLM-powered travel planners.
+          and <strong>Generative AI integrations</strong> — building production e-commerce platforms,
+          REST APIs, agentic AI systems, and LLM-powered applications.
         </p>
         <p className="body-text max-w-2xl mt-6 mb-8">
           At <strong>AI Karyashala</strong>, I completed 6 months of intensive systems training under

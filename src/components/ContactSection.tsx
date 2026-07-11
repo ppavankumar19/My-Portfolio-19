@@ -62,8 +62,8 @@ const ContactSection = () => {
         {/* Left Column: Contact Info */}
         <div className="space-y-8 md:space-y-10">
           <p className="text-foreground/80 leading-relaxed font-light text-lg">
-            I'm always interested in hearing about new projects and
-            opportunities. Whether you have a question or just want to say hi,
+            I'm always open to full-time roles and interesting engineering
+            conversations. Whether you have a question or just want to connect,
             feel free to drop a message.
           </p>
 

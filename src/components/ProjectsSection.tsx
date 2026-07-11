@@ -1,6 +1,5 @@
 import { Github, ExternalLink } from 'lucide-react';
 import SectionBlock from './SectionBlock';
-import { Button } from './ui/button';
 import { Badge } from './ui/badge';
 import { playHover, playClick } from '@/hooks/useSoundEffects';
 
@@ -20,8 +19,8 @@ const projects = [
     title: 'ChemSus Technologies Pvt Ltd',
     isPrivate: true,
     description:
-      'Production e-commerce platform with Supabase Auth (email + Google OAuth), UPI payments, OTP checkout, item-level order tracking, in-order messaging, and a full admin dashboard.',
-    tags: ['Node.js', 'Express', 'PostgreSQL', 'Supabase', 'Vanilla JS'],
+      'Full-stack web application for ChemSus Technologies — a production platform with a public product showcase, e-commerce shop, and complete order and payment flow. Customer accounts with email OTP verification, Buy Now/Cart checkout, dual payment paths (PDF quotation via email or UPI QR direct payment with receipt upload), and full SEO across all public pages (meta, Open Graph, JSON-LD, sitemap.xml). Admin dashboard covers CRUD for products, shop items, and pack pricing; order and payment management with receipt verification; analytics with 30-day/12-month page view charts and geographic visitor breakdown; and an append-only audit log. Hosted on Ubuntu 24.04 with Nginx, PM2, and SSL via Let\'s Encrypt.',
+    tags: ['Node.js', 'Express', 'SQLite', 'Nginx', 'PM2', 'Ubuntu', 'Nodemailer', 'JWT', 'Vanilla JS'],
     githubUrl: '',
     liveUrl: 'https://chemsus.in',
   },
@@ -60,11 +59,6 @@ const ProjectsSection = () => (
           {'isNew' in project && project.isNew && (
             <div className="absolute -top-3 -right-3 bg-black text-white px-3 py-1 text-[10px] font-black uppercase tracking-tighter border-4 border-black z-10 rotate-12 group-hover:rotate-6 transition-transform rounded-lg">
               LATEST WORK
-            </div>
-          )}
-          {'isFinalYear' in project && project.isFinalYear && (
-            <div className="absolute -top-3 -right-3 bg-blue-600 text-white px-3 py-1 text-[10px] font-black uppercase tracking-tighter border-4 border-black z-10 rotate-12 group-hover:rotate-6 transition-transform rounded-lg">
-              FINAL YEAR PROJECT
             </div>
           )}
           <div>
