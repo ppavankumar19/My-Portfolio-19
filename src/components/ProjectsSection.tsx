@@ -6,6 +6,17 @@ import { playHover, playClick } from '@/hooks/useSoundEffects';
 
 const projects = [
   {
+    title: 'Assessment Platform — Online Technical Exam & Proctoring System',
+    isCurrent: true,
+    isPrivate: true,
+    comingSoon: true,
+    description:
+      'Production-ready online assessment platform for conducting technical exams at scale. Supports output prediction and live coding questions with in-browser Python execution via Pyodide (WebAssembly) — no remote code judge needed. Admin dashboard manages exam rounds, questions with test cases, publishing/pausing, and CSV result exports. Candidate environment enforces fullscreen lockdown, tab-switch detection, copy/paste logging, and auto-disqualification. Typing replay lets admins play back keystroke-level code evolution on a timeline to detect malpractice. Auth via Supabase OAuth + Magic Link for admins; session-token flow for candidates.',
+    tags: ['Node.js', 'Fastify', 'Supabase', 'PostgreSQL', 'WebAssembly', 'Pyodide', 'Vanilla JS', 'Proctoring'],
+    githubUrl: '',
+    liveUrl: '',
+  },
+  {
     title: 'ChemSus Technologies Pvt Ltd',
     isPrivate: true,
     description:
@@ -21,15 +32,6 @@ const projects = [
     tags: ['Node.js', 'Express', 'Vanilla JS', 'DNS', 'OSINT', 'Security', 'Rate Limiting'],
     githubUrl: 'https://github.com/ppavankumar19/Nexus-Tool',
     liveUrl: 'https://nexus-tool.19062002.xyz',
-  },
-  {
-    title: 'Atlas — AI Travel Planner',
-    isNew: true,
-    description:
-      'Full-stack AI travel planner powered by Groq Llama 3.3 70B. Generates day-by-day itineraries with live Airbnb listings via MCP server integration, interactive Leaflet.js maps, 150+ currency conversion, accessibility filters (wheelchair, elevator, limited-walking), and PDF/calendar export.',
-    tags: ['Python', 'Flask', 'Groq', 'Agno', 'MCP', 'Leaflet.js', 'Vercel'],
-    githubUrl: 'https://github.com/ppavankumar19/atlas-travel-planner',
-    liveUrl: 'https://atlas.19062002.xyz',
   },
   {
     title: 'LinuxDojo — Linux Learning Platform',
