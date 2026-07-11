@@ -6,6 +6,15 @@ import { playHover, playClick } from '@/hooks/useSoundEffects';
 
 const projects = [
   {
+    title: 'ChemSus Technologies Pvt Ltd',
+    isPrivate: true,
+    description:
+      'Production e-commerce platform with Supabase Auth (email + Google OAuth), UPI payments, OTP checkout, item-level order tracking, in-order messaging, and a full admin dashboard.',
+    tags: ['Node.js', 'Express', 'PostgreSQL', 'Supabase', 'Vanilla JS'],
+    githubUrl: '',
+    liveUrl: 'https://chemsus.in',
+  },
+  {
     title: 'NEXUS — Network Intelligence Tool',
     description:
       'Full-stack OSINT tool for deep reconnaissance of IP addresses and domains. Runs 12 parallel intelligence modules — DNS analysis, geolocation, TCP port scanning, SSL/TLS extraction, HTTP fingerprinting, WHOIS lookup, subdomain enumeration, blacklist reputation checks, latency measurements, and security header analysis — delivered through an animated cyber interface with dual themes.',
@@ -29,14 +38,6 @@ const projects = [
     tags: ['Node.js', 'Express', 'Supabase', 'GitHub OAuth', 'HTML', 'JavaScript', 'Render'],
     githubUrl: 'https://github.com/ppavankumar19/Linuxdojo',
     liveUrl: 'https://linuxdojo.onrender.com/',
-  },
-  {
-    title: 'ChemSus Technologies',
-    description:
-      'Production e-commerce platform with Supabase Auth (email + Google OAuth), UPI payments, OTP checkout, item-level order tracking, in-order messaging, and a full admin dashboard.',
-    tags: ['Node.js', 'Express', 'PostgreSQL', 'Supabase', 'Vanilla JS'],
-    githubUrl: 'https://github.com/ppavankumar19/ChemSus-Technologies-Pvt-LTD',
-    liveUrl: 'https://chemsus.in',
   },
 ];
 
@@ -85,16 +86,23 @@ const ProjectsSection = () => (
           </div>
 
           <div className="flex flex-col sm:flex-row gap-3 mt-8 pt-6 border-t border-black/10">
-            <a
-              href={project.githubUrl}
-              target="_blank"
-              rel="noopener noreferrer"
-              onClick={playClick}
-              className="flex items-center justify-center gap-2 px-4 py-2 border-2 border-black bg-white text-[10px] font-black uppercase tracking-wider transition-all duration-300 shadow-[4px_4px_0px_0px_rgba(0,0,0,1)] hover:shadow-none hover:translate-x-[2px] hover:translate-y-[2px] hover:bg-black hover:text-white rounded-xl"
-            >
-              <Github className="w-3.5 h-3.5" />
-              Source
-            </a>
+            {'isPrivate' in project && project.isPrivate ? (
+              <span className="flex items-center justify-center gap-2 px-4 py-2 border-2 border-dashed border-black/40 bg-white text-[10px] font-black uppercase tracking-wider text-black/40 cursor-not-allowed rounded-xl">
+                <Github className="w-3.5 h-3.5" />
+                Private Repo
+              </span>
+            ) : (
+              <a
+                href={project.githubUrl}
+                target="_blank"
+                rel="noopener noreferrer"
+                onClick={playClick}
+                className="flex items-center justify-center gap-2 px-4 py-2 border-2 border-black bg-white text-[10px] font-black uppercase tracking-wider transition-all duration-300 shadow-[4px_4px_0px_0px_rgba(0,0,0,1)] hover:shadow-none hover:translate-x-[2px] hover:translate-y-[2px] hover:bg-black hover:text-white rounded-xl"
+              >
+                <Github className="w-3.5 h-3.5" />
+                Source
+              </a>
+            )}
             {'comingSoon' in project && project.comingSoon ? (
               <span className="flex items-center justify-center gap-2 px-4 py-2 border-2 border-dashed border-black/40 bg-white text-[10px] font-black uppercase tracking-wider text-black/40 cursor-not-allowed rounded-xl">
                 <ExternalLink className="w-3.5 h-3.5" />
