@@ -2,25 +2,16 @@ import SectionBlock from './SectionBlock';
 
 const experiences = [
   {
-    role: 'AI Systems Developer — OpenClaw',
-    company: 'Self-Directed',
-    period: 'Feb 2026 – Present · Currently Building',
-    isCurrent: true,
-    description:
-      'Designing and building OpenClaw — a production-grade multi-agent AI automation system that acts as a virtual social media intern. The system uses a multi-agent architecture where each platform (Instagram, Twitter/X, LinkedIn, Facebook, YouTube, Email) has its own dedicated agent with platform-specific content types, generation logic, and publishing adapters. Accepts input as images, videos, URLs, or text prompts via Telegram; routes each request to the correct platform agent using a two-level intent detector; generates content using a cascading LLM pipeline (Cerebras Qwen-3 235B → Groq LLaMA 70B → NVIDIA Nemotron 120B) with the fastest available model auto-selected at runtime; renders a live preview screenshot via Playwright before publishing; holds content in a draft store and waits for human approval, rejection, rescheduling, or tone changes; auto-publishes approved posts via Playwright browser automation; runs a morning content batch at 8 AM and an evening report at 8 PM; and handles bulk HR offer letter generation from Excel → A4 PDF → SMTP email dispatch.',
-    tags: ['Python', 'Multi-Agent AI', 'LLM Integration', 'Playwright', 'Telegram Bot', 'APScheduler', 'Cerebras', 'Groq', 'NVIDIA NIM', 'Async Python'],
-  },
-  {
     role: 'AI-Native Intern',
     company: 'AI Karyashala — Research & Development',
     period: 'Feb 2026 – Jul 2026 · Visakhapatnam, India',
     isCurrent: false,
     description:
-      'Learned the internal workings of Large Language Models (LLMs), experimented with various open-source and local models, and built full-stack AI-native applications. Built and tested AI agents locally using open-source agentic frameworks, gaining hands-on experience in prompt engineering, MCP, RAG, debugging, and version control while collaborating with mentors on real-world engineering practices.',
-    tags: ['LLMs', 'AI Agents', 'Prompt Engineering', 'MCP', 'RAG', 'Python', 'Version Control'],
+      'Explored agentic development using frameworks including n8n, Hermes Agent, and OpenClaw. Built OpenClaw — a multi-agent social media automation system with platform-specific agents (Instagram, Twitter/X, LinkedIn, YouTube, Email), Telegram-based input, a cascading LLM pipeline (Cerebras Qwen-3 235B → Groq LLaMA 70B → NVIDIA NIM), Playwright-based publishing with live preview, and a human-in-the-loop approval flow. Gained hands-on experience with open-source and local LLMs, prompt engineering, MCP, RAG, and version control through real-world engineering practice under mentor guidance.',
+    tags: ['Python', 'Multi-Agent AI', 'n8n', 'Playwright', 'Telegram Bot', 'Cerebras', 'Groq', 'NVIDIA NIM', 'MCP', 'RAG', 'Prompt Engineering'],
   },
   {
-    role: 'Systems & AI Trainee',
+    role: 'AI Native Development Trainee',
     company: 'AI Karyashala — Rohini Kumar Barla',
     period: 'Aug 2025 – Jan 2026 · Visakhapatnam, India',
     isCurrent: false,
