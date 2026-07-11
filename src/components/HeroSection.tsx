@@ -18,9 +18,9 @@ const roles = [
   'Backend Architect',
   'Full Stack Engineer',
   'GenAI Builder',
-  'Freelance Developer',
   'LLM Integrator',
   'System Designer',
+  'AI-Native Developer',
 ];
 
 const calcExperience = () => {
