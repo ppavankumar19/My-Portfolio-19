@@ -25,6 +25,8 @@ const Terminal = () => {
   const [isMaximized, setIsMaximized] = useState(false);
   const [terminalTheme, setTerminalTheme] = useState('text-white/90');
   const [input, setInput] = useState('');
+  const [cmdHistory, setCmdHistory] = useState<string[]>([]);
+  const [cmdHistoryIdx, setCmdHistoryIdx] = useState(-1);
   const [history, setHistory] = useState<CommandOutput[]>([
     {
       id: 0,
@@ -78,7 +80,45 @@ const Terminal = () => {
     return () => window.removeEventListener('keydown', handleKeyDown);
   }, [isOpen]);
 
-  // ... existing imports
+  const AUTOCOMPLETE_COMMANDS = [
+    'help', 'ls', 'about', 'skills', 'projects', 'contact', 'clear', 'exit',
+    'cat readme.md', 'cat experience.txt', 'cat education.txt', 'cat roadmap.sh',
+    'theme green', 'theme amber', 'theme white',
+  ];
+
+  const handleKeyDown = (e: React.KeyboardEvent<HTMLInputElement>) => {
+    if (e.key === 'Tab') {
+      e.preventDefault();
+      if (!input.trim()) return;
+      const lower = input.toLowerCase();
+      const match = AUTOCOMPLETE_COMMANDS.find((c) => c.startsWith(lower));
+      if (match) setInput(match);
+      return;
+    }
+
+    if (e.key === 'ArrowUp') {
+      e.preventDefault();
+      if (cmdHistory.length === 0) return;
+      const nextIdx = cmdHistoryIdx === -1 ? cmdHistory.length - 1 : Math.max(0, cmdHistoryIdx - 1);
+      setCmdHistoryIdx(nextIdx);
+      setInput(cmdHistory[nextIdx]);
+      return;
+    }
+
+    if (e.key === 'ArrowDown') {
+      e.preventDefault();
+      if (cmdHistoryIdx === -1) return;
+      const nextIdx = cmdHistoryIdx + 1;
+      if (nextIdx >= cmdHistory.length) {
+        setCmdHistoryIdx(-1);
+        setInput('');
+      } else {
+        setCmdHistoryIdx(nextIdx);
+        setInput(cmdHistory[nextIdx]);
+      }
+      return;
+    }
+  };
 
   const getCommandResponse = (cmd: string): React.ReactNode | null => {
     switch (cmd) {
@@ -138,14 +178,17 @@ const Terminal = () => {
         return (
           <div className="flex flex-col gap-1">
             <p className="mb-1 text-purple-400">RECENT WORK:</p>
-            <a href="#projects" className="text-blue-400 hover:underline">
-              1. Atlas — AI Travel Planner (LATEST)
+            <a href="https://assessment-platform-x8dl.onrender.com/test/" target="_blank" rel="noopener noreferrer" className="text-blue-400 hover:underline">
+              1. Assessment Platform — Online Technical Exam &amp; Proctoring (LIVE)
             </a>
-            <a href="#projects" className="text-blue-400 hover:underline">
+            <a href="https://chemsus.in" target="_blank" rel="noopener noreferrer" className="text-blue-400 hover:underline">
               2. ChemSus Technologies (E-Commerce)
             </a>
-            <a href="#projects" className="text-blue-400 hover:underline">
-              3. VocabHub (Full Stack)
+            <a href="https://nexus-tool.19062002.xyz" target="_blank" rel="noopener noreferrer" className="text-blue-400 hover:underline">
+              3. NEXUS — Network Intelligence Tool
+            </a>
+            <a href="https://linuxdojo.onrender.com/" target="_blank" rel="noopener noreferrer" className="text-blue-400 hover:underline">
+              4. LinuxDojo — Linux Learning Platform
             </a>
           </div>
         );
@@ -225,6 +268,9 @@ const Terminal = () => {
   const handleCommand = (cmd: string) => {
     const trimmedCmd = cmd.trim();
     if (!trimmedCmd) return;
+
+    setCmdHistory((prev) => [...prev, trimmedCmd]);
+    setCmdHistoryIdx(-1);
 
     const newHistory: CommandOutput[] = [
       ...history,
@@ -357,7 +403,7 @@ const Terminal = () => {
     >
       <div
         className={`bg-[#0c0c0c] border border-white/20 shadow-[8px_8px_0px_0px_rgba(255,255,255,0.1)] w-full transition-all duration-300 flex flex-col font-mono text-sm md:text-base selection:bg-white/20 active:border-white/40 rounded-xl overflow-hidden ${
-          isMaximized ? 'h-[95vh] w-[95vw]' : 'max-w-2xl h-[600px]'
+          isMaximized ? 'h-[95vh] w-[95vw]' : 'max-w-2xl h-[600px] max-h-[85vh]'
         }`}
         onClick={(e) => e.stopPropagation()}
       >
@@ -422,8 +468,10 @@ const Terminal = () => {
               value={input}
               onChange={(e) => {
                 setInput(e.target.value);
+                setCmdHistoryIdx(-1);
                 playKeyTick();
               }}
+              onKeyDown={handleKeyDown}
               className="flex-1 bg-transparent border-none outline-none text-white focus:ring-0 p-0"
               autoFocus
               spellCheck={false}
