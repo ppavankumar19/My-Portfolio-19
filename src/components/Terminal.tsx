@@ -155,13 +155,44 @@ const Terminal = () => {
           </div>
         );
       case 'cat readme.md':
-        return "Pavan's Portfolio v1.0.0. Built with React, TypeScript, and a reckless amount of neobrutalism.";
+        return (
+          <div>
+            <p className="text-yellow-400 mb-1"># Pavan Kumar Ponnuri — Portfolio v3.0.0</p>
+            <p>Built with React 18 + TypeScript + Vite + Tailwind CSS.</p>
+            <p>Neo-brutalist design · Matrix rain hero · Interactive terminal · GitHub activity graph.</p>
+            <p className="mt-1">Status: <span className="text-green-400">production</span> · Open to full-time roles.</p>
+          </div>
+        );
       case 'cat experience.txt':
-        return 'Data Analytics Intern @ GrrowUp (Jun–Aug 2024). Full analytics workflow: EDA, dashboards, SQL, web scraping.';
+        return (
+          <div>
+            <p className="text-yellow-400 mb-1">EXPERIENCE:</p>
+            <p className="text-green-400">① AI-Native Intern — AI Karyashala R&D</p>
+            <p>Feb 2026 – Jul 2026 · Visakhapatnam, India</p>
+            <p>Built multi-agent AI systems (OpenClaw), explored RAG, MCP, agentic frameworks (n8n, Hermes Agent), LLMs via Ollama &amp; Hugging Face, and full-stack apps.</p>
+            <p className="text-green-400 mt-2">② AI Native Development Trainee — AI Karyashala</p>
+            <p>Aug 2025 – Jan 2026 · Visakhapatnam, India</p>
+            <p>6-month intensive under Rohini Kumar Barla. C, Python, Flask, FastAPI, HTML/CSS/JS, SQLite/MySQL, Linux, SSH, cloud deployment, networking, GenAI workflows.</p>
+          </div>
+        );
       case 'cat education.txt':
-        return 'B.Tech CSE, GITAM University (2021–2025), CGPA: 8.03. Based in Visakhapatnam, Andhra Pradesh, India.';
+        return (
+          <div>
+            <p className="text-yellow-400 mb-1">EDUCATION:</p>
+            <p className="text-green-400">B.Tech — Computer Science &amp; Engineering</p>
+            <p>GITAM University · 2021 – 2025 · CGPA: 8.03</p>
+            <p>Visakhapatnam, Andhra Pradesh, India</p>
+          </div>
+        );
       case 'cat roadmap.sh':
-        return 'Next up: Ship CLI Academy, expand Atlas AI planner, land a backend/AI engineering role.';
+        return (
+          <div>
+            <p className="text-yellow-400 mb-1">#!/bin/bash  # roadmap.sh</p>
+            <p><span className="text-green-400">CURRENT:</span> Building Assessment Platform · Expanding AI-native projects</p>
+            <p><span className="text-green-400">NEXT:</span> Land a backend / AI engineering role · Ship more production-grade systems</p>
+            <p><span className="text-green-400">LEARNING:</span> Advanced agentic frameworks · System design at scale</p>
+          </div>
+        );
       case 'about':
         return "I'm Pavan Kumar Ponnuri, an AI Native Software Developer specialising in backend architecture, full-stack development, and Generative AI integrations. Building systems that ship.";
       case 'skills':
