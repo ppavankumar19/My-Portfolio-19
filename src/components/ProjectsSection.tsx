@@ -8,12 +8,11 @@ const projects = [
     title: 'Assessment Platform — Online Technical Exam & Proctoring System',
     isCurrent: true,
     isPrivate: true,
-    comingSoon: true,
     description:
       'Production-ready online assessment platform for conducting technical exams at scale. Supports output prediction and live coding questions with in-browser Python execution via Pyodide (WebAssembly) — no remote code judge needed. Admin dashboard manages exam rounds, questions with test cases, publishing/pausing, and CSV result exports. Candidate environment enforces fullscreen lockdown, tab-switch detection, copy/paste logging, and auto-disqualification. Typing replay lets admins play back keystroke-level code evolution on a timeline to detect malpractice. Auth via Supabase OAuth + Magic Link for admins; session-token flow for candidates.',
     tags: ['Node.js', 'Fastify', 'Supabase', 'PostgreSQL', 'WebAssembly', 'Pyodide', 'Vanilla JS', 'Proctoring'],
     githubUrl: '',
-    liveUrl: '',
+    liveUrl: 'https://assessment-platform-x8dl.onrender.com/test/',
   },
   {
     title: 'ChemSus Technologies Pvt Ltd',
