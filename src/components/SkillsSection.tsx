@@ -74,6 +74,8 @@ const skillCategories = [
       'OpenClaw',
       'n8n',
       'Ollama',
+      'Latent Force',
+      'Latent Graph',
       'Pandas',
       'NumPy',
     ],
@@ -92,6 +94,7 @@ const skillCategories = [
       'OpenCode',
       'Codex',
       'Google Colab',
+      'entire.io',
     ],
   },
 ];
