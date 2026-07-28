@@ -158,8 +158,11 @@ const Terminal = () => {
         return (
           <div>
             <p className="text-yellow-400 mb-1"># Pavan Kumar Ponnuri — Portfolio v3.0.0</p>
-            <p>Built with React 18 + TypeScript + Vite + Tailwind CSS.</p>
-            <p>Neo-brutalist design · Matrix rain hero · Interactive terminal · GitHub activity graph.</p>
+            <p><span className="text-green-400">Framework:</span> React 18 + TypeScript · Bundler: Vite 5 (SWC)</p>
+            <p><span className="text-green-400">Styling:</span> Tailwind CSS 3 + shadcn/ui · Icons: Lucide React</p>
+            <p><span className="text-green-400">Architecture:</span> Monolithic SPA (Single-Page Application) — purely static, no backend, no API routes. Client-side only.</p>
+            <p><span className="text-green-400">Hosting:</span> Static site · deployable on Vercel / Netlify / Render</p>
+            <p className="mt-1">Features: Matrix rain hero · Interactive terminal · GitHub activity graph · Neo-brutalist design</p>
             <p className="mt-1">Status: <span className="text-green-400">production</span> · Open to full-time roles.</p>
           </div>
         );
@@ -188,9 +191,10 @@ const Terminal = () => {
         return (
           <div>
             <p className="text-yellow-400 mb-1">#!/bin/bash  # roadmap.sh</p>
-            <p><span className="text-green-400">CURRENT:</span> Building Assessment Platform · Expanding AI-native projects</p>
+            <p><span className="text-green-400">CURRENT:</span> Building Assessment Platform · Building AI agents using Python frameworks</p>
+            <p><span className="text-green-400">EXPLORING:</span> Agentic frameworks — Hermes Agent, n8n, LangChain, OpenClaw · MCP integrations · RAG pipelines</p>
             <p><span className="text-green-400">NEXT:</span> Land a backend / AI engineering role · Ship more production-grade systems</p>
-            <p><span className="text-green-400">LEARNING:</span> Advanced agentic frameworks · System design at scale</p>
+            <p><span className="text-green-400">LEARNING:</span> Advanced agent orchestration · Multi-agent coordination patterns · System design at scale</p>
           </div>
         );
       case 'about':
